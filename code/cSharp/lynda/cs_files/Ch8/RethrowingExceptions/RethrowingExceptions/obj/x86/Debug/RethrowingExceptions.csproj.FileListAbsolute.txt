@@ -1,0 +1,12 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\RethrowingExceptions\bin\Debug\RethrowingExceptions.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\RethrowingExceptions\bin\Debug\RethrowingExceptions.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\RethrowingExceptions\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\RethrowingExceptions\obj\x86\Debug\RethrowingExceptions.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\RethrowingExceptions\obj\x86\Debug\RethrowingExceptions.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch8\RethrowingExceptions\RethrowingExceptions\obj\x86\Debug\RethrowingExceptions.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch8\RethrowingExceptions\RethrowingExceptions\obj\x86\Debug\RethrowingExceptions.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch8\RethrowingExceptions\RethrowingExceptions\obj\x86\Debug\RethrowingExceptions.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch8\RethrowingExceptions\RethrowingExceptions\obj\x86\Debug\RethrowingExceptions.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch8\RethrowingExceptions\RethrowingExceptions\bin\Debug\RethrowingExceptions.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch8\RethrowingExceptions\RethrowingExceptions\bin\Debug\RethrowingExceptions.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch8\RethrowingExceptions\RethrowingExceptions\obj\x86\Debug\ResolveAssemblyReference.cache

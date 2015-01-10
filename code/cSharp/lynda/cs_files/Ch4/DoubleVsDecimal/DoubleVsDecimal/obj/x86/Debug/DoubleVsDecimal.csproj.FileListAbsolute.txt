@@ -1,0 +1,12 @@
+C:\Users\joemarin\AppData\Local\Temporary Projects\DoubleVsDecimal\bin\Debug\DoubleVsDecimal.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\DoubleVsDecimal\bin\Debug\DoubleVsDecimal.pdb
+C:\Users\joemarin\AppData\Local\Temporary Projects\DoubleVsDecimal\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarin\AppData\Local\Temporary Projects\DoubleVsDecimal\obj\x86\Debug\DoubleVsDecimal.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\DoubleVsDecimal\obj\x86\Debug\DoubleVsDecimal.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\DoubleVsDecimal\DoubleVsDecimal\obj\x86\Debug\DoubleVsDecimal.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\DoubleVsDecimal\DoubleVsDecimal\obj\x86\Debug\DoubleVsDecimal.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\DoubleVsDecimal\DoubleVsDecimal\obj\x86\Debug\DoubleVsDecimal.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\DoubleVsDecimal\DoubleVsDecimal\obj\x86\Debug\DoubleVsDecimal.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\DoubleVsDecimal\DoubleVsDecimal\bin\Debug\DoubleVsDecimal.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\DoubleVsDecimal\DoubleVsDecimal\bin\Debug\DoubleVsDecimal.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\DoubleVsDecimal\DoubleVsDecimal\obj\x86\Debug\ResolveAssemblyReference.cache

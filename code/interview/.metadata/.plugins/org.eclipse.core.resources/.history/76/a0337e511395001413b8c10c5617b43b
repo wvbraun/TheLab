@@ -1,0 +1,50 @@
+package code.interview.general;
+
+import java.util.ArrayList;
+
+public class Array 
+{
+	ArrayList<Integer> xs;
+	
+	public Array(ArrayList<Integer> xs)
+	{
+		this.xs = xs;
+	}
+	
+	public void setAllZero()
+	{
+		for (int x : xs)
+		{
+			x = 0;
+		}
+	}
+	
+	public int getMax()
+	{
+		int max = xs.get(0);
+		
+		for (int i = 1; i < xs.size(); ++i)
+		{
+			if (xs.get(i) > max)
+			{
+				max = xs.get(i);
+			}
+		}
+		
+		return max;
+	}
+	
+	public findMostFrequent()
+	{
+		Array lookup = new Array(new int[(int) Math.pow(2, 32)]); // 2^32 is the largest number we could have.
+		lookup.setAllZero();
+		
+		for (int x : xs)
+		{
+			++x;
+		}
+		
+		int index = getMax();
+	}
+
+}

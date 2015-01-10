@@ -1,0 +1,20 @@
+package tests.interview;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+import tests.interview.general.*;
+
+public class AllTests 
+{
+	@RunWith(Suite.class)
+	@SuiteClasses({ SimpleGameBoardTest.class,
+	SimpleGameBoardTest.class
+	})
+	
+	public class AllTests 
+	{
+	}
+
+}

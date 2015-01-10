@@ -1,0 +1,10 @@
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch8\ExceptionObject\ExceptionObject\bin\Debug\ExceptionObject.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch8\ExceptionObject\ExceptionObject\bin\Debug\ExceptionObject.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch8\ExceptionObject\ExceptionObject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch8\ExceptionObject\ExceptionObject\obj\x86\Debug\ExceptionObject.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch8\ExceptionObject\ExceptionObject\obj\x86\Debug\ExceptionObject.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch8\ExceptionObject\ExceptionObject\obj\x86\Debug\ExceptionObject.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch8\ExceptionObject\ExceptionObject\bin\Debug\ExceptionObject.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch8\ExceptionObject\ExceptionObject\bin\Debug\ExceptionObject.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch8\ExceptionObject\ExceptionObject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch8\ExceptionObject\ExceptionObject\obj\x86\Debug\ExceptionObject.pdb

@@ -1,0 +1,20 @@
+C:\Users\joemarin\AppData\Local\Temporary Projects\HelloWorldProject\bin\Release\HelloWorldProject.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\HelloWorldProject\bin\Release\HelloWorldProject.pdb
+C:\Users\joemarin\AppData\Local\Temporary Projects\HelloWorldProject\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarin\AppData\Local\Temporary Projects\HelloWorldProject\obj\x86\Release\HelloWorldProject.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\HelloWorldProject\obj\x86\Release\HelloWorldProject.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\HelloWorldProject\HelloWorldProject\bin\Release\HelloWorldProject.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\HelloWorldProject\HelloWorldProject\bin\Release\HelloWorldProject.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\HelloWorldProject\HelloWorldProject\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\HelloWorldProject\HelloWorldProject\obj\x86\Release\HelloWorldProject.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\HelloWorldProject\HelloWorldProject\obj\x86\Release\HelloWorldProject.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\HelloWorldProject\HelloWorldProject\bin\Release\HelloWorldProject.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\HelloWorldProject\HelloWorldProject\bin\Release\HelloWorldProject.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\HelloWorldProject\HelloWorldProject\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\HelloWorldProject\HelloWorldProject\obj\x86\Release\HelloWorldProject.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\HelloWorldProject\HelloWorldProject\obj\x86\Release\HelloWorldProject.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\HelloWorldProject\HelloWorldProject\bin\Release\HelloWorldProject.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\HelloWorldProject\HelloWorldProject\bin\Release\HelloWorldProject.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\HelloWorldProject\HelloWorldProject\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\HelloWorldProject\HelloWorldProject\obj\x86\Release\HelloWorldProject.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\HelloWorldProject\HelloWorldProject\obj\x86\Release\HelloWorldProject.pdb

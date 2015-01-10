@@ -1,0 +1,51 @@
+Queue - 
+	A queue is an ordered collection of items where the addition
+	of new items happens at one end, called the 'rear,' and the
+	removal of existing items occurs at the other end, called
+	the 'front.' As an element enters the queue it starts at
+	the rear andmakes its way toward the front, waiting until 
+	the time when it is the next element to be removed. 
+	
+	The most recently added item in the queue must wait at the
+	end of the collection. The item that has been in the collection
+	the longest is at the front. This is referred to as 
+	FIFO (first in, last out)
+
+	ex: computer lab w/ one printer. When students want to print, 
+	their tasks 'get in line' with the other tasks. The first
+	task is the next task to be printed.. 
+
+---------------------
+The Queue Abstract Data Type:
+
+	- Queue() - creates a new queue tht is empty. It needs no
+			parameters and returns an empty queue. 
+	
+	- enqueue(item) - adds a new item to the rear of the queue. 
+			It needs the item and returns nothing. 
+
+	- dequeue() - removes the front item from the queue. It needs
+			no parameters and returns the item. The queue is 
+			modified. 
+
+	- isEmpty() - tests to see whether the queue is empty. It 
+			needs no parameters and returns a boolean value. 
+
+	- size() - returns the number of items in the queue. It 
+			needs no parameters and returns an integer. 
+
+---------------------
+Example Queue Operations:
+
+assume q is a queue that has been created and is empty... 
+
+Queue Operation	|	Queue Contents	| Return Value
+
+q.isEmpty()		|	[]				| True
+q.enqueue(4)	|	[4]				|
+q.enqueue('dog')|	['dog', 4]		|
+q.enqueue(True)	|	[True, 'dog', 4]| 
+q.size()		|	[True, 'dog', 4]|	3
+q.isEmpty()		|   [True, 'dog', 4]| False
+q.dequeue()		|	[True, 'dog']	| 4
+q.dequeue()		| 	[True]			| 'dog'

@@ -1,0 +1,31 @@
+The struct is a lightweight alternative to a class. It can
+do nearly the same thing as a class, but it is less
+expensive to use. 
+
+New instances of a class are placed on the heap, where new
+instances of a struct are placed on the stack. You are also
+not dealing with references to structs, like with classes, 
+but instead you are working directly with the struct instance.
+This also means that when you pass a struct to a function, 
+it is by value, instead of as a reference. 
+
+You should use structs when you wish to represent more 
+simple data structures, espcially if you know you will be
+instantiaing many of them. 
+
+
+Fields cannot have initializers, meaning that you cannot
+declare a member like this:
+
+	private string color = "Blue";
+
+If you declare a constructor, all fields must be assigned to
+before leaving the constructor. A struct does come with a 
+default constructor, but as soon as you choose to define your
+own, you must initalize all fields in it. 
+That also means that you cannot declare your own parameterless
+constructrs - all struct constructs must have at least one 
+parameter. 
+
+A struct cannot inherit from other classes or structs, and 
+classes cannot inherit form structs. 

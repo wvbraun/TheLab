@@ -1,0 +1,15 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\DebugAndTrace\bin\Debug\DebugAndTrace.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\DebugAndTrace\bin\Debug\DebugAndTrace.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\DebugAndTrace\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\DebugAndTrace\obj\x86\Debug\DebugAndTrace.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\DebugAndTrace\obj\x86\Debug\DebugAndTrace.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch12\DebugAndTrace\DebugAndTrace\obj\x86\Debug\DebugAndTrace.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch12\DebugAndTrace\DebugAndTrace\obj\x86\Debug\DebugAndTrace.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch12\DebugAndTrace\DebugAndTrace\bin\Debug\DebugAndTrace.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch12\DebugAndTrace\DebugAndTrace\bin\Debug\DebugAndTrace.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch12\DebugAndTrace\DebugAndTrace\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch12\DebugAndTrace\DebugAndTrace\obj\x86\Debug\DebugAndTrace.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch12\DebugAndTrace\DebugAndTrace\obj\x86\Debug\DebugAndTrace.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch12\DebugAndTrace\DebugAndTrace\bin\Debug\DebugAndTrace.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch12\DebugAndTrace\DebugAndTrace\bin\Debug\DebugAndTrace.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch12\DebugAndTrace\DebugAndTrace\obj\x86\Debug\ResolveAssemblyReference.cache

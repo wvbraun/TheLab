@@ -1,0 +1,14 @@
+package games.ticTacToe.view.graphical;
+
+import games.ticTacToe.board.Tile;
+
+import javax.swing.JButton;
+
+@SuppressWarnings("serial")
+public class BoardTile extends JButton
+{
+	int x, y, radius;
+	
+	public BoardTile(int x, int y, int radius, Tile tile )
+
+}

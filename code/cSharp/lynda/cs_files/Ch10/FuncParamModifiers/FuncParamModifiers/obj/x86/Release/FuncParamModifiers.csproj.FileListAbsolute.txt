@@ -1,0 +1,5 @@
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\FuncParamModifiers\FuncParamModifiers\bin\Release\FuncParamModifiers.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\FuncParamModifiers\FuncParamModifiers\bin\Release\FuncParamModifiers.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\FuncParamModifiers\FuncParamModifiers\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\FuncParamModifiers\FuncParamModifiers\obj\x86\Release\FuncParamModifiers.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\FuncParamModifiers\FuncParamModifiers\obj\x86\Release\FuncParamModifiers.pdb

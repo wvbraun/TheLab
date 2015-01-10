@@ -1,0 +1,14 @@
+package tests.interview;
+
+public class AllTests 
+{
+	@RunWith(Suite.class)
+	@SuiteClasses({ SimpleGameBoardTest.class,
+	SimpleGameBoardTest.class
+	})
+	
+	public class AllTests 
+	{
+	}
+
+}

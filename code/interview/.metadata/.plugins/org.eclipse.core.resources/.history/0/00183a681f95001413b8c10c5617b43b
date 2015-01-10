@@ -1,0 +1,47 @@
+package code.interview.general;
+
+public class General
+{
+
+	public boolean isRotated(int[] ls1, int[] ls2)
+	{
+		if (ls1.length != ls2.length)
+		{
+			return false;
+		}
+		
+	}
+	
+	private int[] shiftArray(int[] ls, int amt)
+	{
+		int[] res = new int[ls.length];
+		
+		while (amt < ls.length)
+		{
+			res[amt] = ls[amt];
+		}
+		
+		for (int i = 0; i < amt; ++i)
+		{
+			res[i] = ls[i];
+		}
+			
+		return res;
+	}
+	
+	private boolean isSame(int[] ls1, int[] ls2)
+	{
+		boolean result = true;
+		
+		for (int i = 0; i < ls1.length; ++i)
+		{
+			if (ls1[i] != ls2[i])
+			{
+				result = false;
+				break;
+			}
+		}
+			
+		return result;
+	}
+}

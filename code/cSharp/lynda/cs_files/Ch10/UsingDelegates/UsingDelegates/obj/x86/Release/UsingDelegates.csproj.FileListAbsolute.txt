@@ -1,0 +1,5 @@
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\UsingDelegates\UsingDelegates\bin\Release\UsingDelegates.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\UsingDelegates\UsingDelegates\bin\Release\UsingDelegates.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\UsingDelegates\UsingDelegates\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\UsingDelegates\UsingDelegates\obj\x86\Release\UsingDelegates.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\UsingDelegates\UsingDelegates\obj\x86\Release\UsingDelegates.pdb

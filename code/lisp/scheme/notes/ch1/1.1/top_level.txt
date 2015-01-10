@@ -1,0 +1,163 @@
+The variables bound by let and lambda expressions are not 
+visible outside the bodies of these expressions. Suppose you
+have created an object, perhaps a procedure, that must be 
+accessible anywhere, like + or cons. 
+You need a top-level definitio, which can established with define.
+Top-level definitions are visible in every expression you enter, 
+except where shadowed by another binding. 
+
+Ex: 
+
+(define double-any 
+ (lambda (f x)
+  (f x x))) ; double-any returns 'x' doubled. 
+
+(double-any + 10)
+=> 20
+
+(double-any cons 'a)
+=> (a . a)
+
+---------
+A top level defintion may be established for any object:
+
+(define sandwich "peanut-butter-and-jelly")
+
+sandwich
+=> "peanut-butter-and-jelly"
+
+-----------
+Top-level defintions may be shadowed by let or lambda bindings:
+
+(define xyz '(x y z))
+(let ((xyz '(z y x)))
+ xyz)
+=> (z y x)
+
+Variables w/ top-level defintions act almost as if they were 
+bound by a let expression enclosing all of the expression you type.
+
+--------------------------------------
+Scheme provides abbreviations cadr and cddr for the compositions 
+of car with cdrand cdr with cdr. Meaning that 
+(cadr list) == (car (cdr list)) and 
+(cddr list) == (cdr (cdr list))
+
+Ex:
+
+(define cadr
+ (lambda (x)
+  (car (cdr x))))
+
+(define cddr
+ (lambda (x)
+  (cdr (cdr x))))
+
+(cadr '(a b c))
+=> b
+
+(cddr '(a b c))
+=> (c)
+
+----------------------
+Any defintion (define var exp) where exp is a lambda expression, 
+can be written in a shorter form that supresses the lambda. The
+exact syntax depends upon the format of the lambda epxression's
+formal paramters specifier; whether it is a proper list of 
+variables, a single variable, or an imporper list of variables.
+
+Ex:
+
+(define var[0]
+ (lambda (var[1] ... var[n])
+  e[1] e[2] ...))
+
+can be abbreviated as
+
+(define (var[0] var[1] ... var[n])
+ e[1] e[2] ...)
+
+(define var[0]
+ (lambda var[r]
+  e[1] e[2] ...))
+
+can be abbreviated as
+
+(define (var[0] . var[r])
+ e[1] e[2] ...)
+ 
+(define var[0]
+ (lambda (var[1] ... var[n] . var[r])
+  e[1] e[2] ...))
+
+can be abrreviated as 
+
+(define (var[0] var[1] ... var[n] . var[r])
+ e[1] e[2] ...)
+
+Ex: the definitions of cadr and list can be written as:
+
+(define (cadr x) 
+ (car (cdr x)))
+
+(define (list . x) x)
+
+--------------------------------------------
+Top-level definitions make it easier to experiment with a 
+procedure interactively because we need not retype the procedure
+each time it is used. 
+
+Ex: variation of double-any that returns an 'ordinary 2-argument
+procedure into a 'doubling' 1-argument procedure. 
+
+(define doubler
+ (lambda (f) 
+  (lambda (x) (f x x))))
+
+doubler accepts 1 argument, f, which must be a procedure that 
+accepts 2 arguments. The procedure returned by doubler accepts
+1 argument, which it uses for both arguments in an application 
+of f. 
+
+(define double (doubler +))
+(double 13/2)
+=> 13
+
+(define double-cons (doubler cons))
+(double-cons 'a)
+=> (a . a)
+
+(define double-any
+ (lambda (f x)
+  ((doubler f) x)))
+ 
+-----------------------------------
+What happens if you attempt to use a variable that is not bound
+by a let or lambda exprssion and that does not hvae a 
+top-level defintion?
+
+ex:
+(i-am-not-defined 3)
+=> unbound variable; i-am-not-defined
+
+The system wil not complain about the apperance of an undefined 
+variable within a lambda expression, until and unless the
+resulting procedure is applied. The following should not
+cause an error:
+
+(define proc1
+ (lambda (x y) 
+  (proc2 y x)))
+
+if you try to appply proc1 before defining proc2, you should get
+and error. but lets give proc2 a top-level defintion:
+
+(define proc2 cons)
+(proc1 'a 'b)
+=> (b . a)
+
+-------------------------------------------------------------------
+Exercises:
+
+
+

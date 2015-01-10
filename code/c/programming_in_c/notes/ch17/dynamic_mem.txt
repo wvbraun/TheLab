@@ -1,0 +1,83 @@
+Whenever you define a variable in C, the C complier automatically 
+allocates the correct amount of storage for you. 
+
+It is often desirable to be able to dynamically allocate storage. Suppose
+you have a program that is designed to read in a s et of data from a file
+into an array in memory. However, you do not know how much data is
+in the file until the program starts execution. You have 3 choices:
+	1. define the array to contain the max number elements
+	2. use a variable length array to dimension the size of array
+	3. alloce the array dynamically. 
+
+1. #define kMaxElements 1000
+
+struct dataEntry dataArray [kMaxElements];
+
+2. 
+struct dataEntry dataArray [dataItems];
+
+---------------------------
+calloc and malloc 
+
+calloc and malloc can be used to allocate memory at runtime. the calloc
+function takes 2 arguments the specify the number of elements to be 
+reserved and the size of each element in bytes. the function returns a 
+pointer to the beginning of the allocated storage area in memory. the 
+storage area is also automatically set to 0. 
+	calloc returns a pointer to void. 
+
+malloc only takes 1 argument, the total number of bytes of storage to 
+allocate. 
+
+they are in <stdlib.h>
+
+-----------------------------
+sizeof
+
+to deterimine the size of data elements to be reserved by calloc or malloc,
+size of should be used. size of returns the size of an item in bytes. 
+ex:
+
+sizeof(int)
+gives the number of bytes needed to store an int. usually 4. 
+
+if x is defined to be an array of 100 integers:
+
+sizeof(x) 
+gives the amount to store 100 ints, usualy 400. 
+
+ex:
+
+sizeof(struct dataEntry)
+
+If you want to allocate enough storage to store 1000 integers:
+
+#include <stdlib.h>
+
+int *intPtr;
+
+int Ptr = (int *) calloc(sizeof(int), 1000);
+
+using malloc:
+
+intPtr = (int *) malloc (1000 * sizeof (int));
+
+--------------------------------------------
+free:
+
+
+when you are done working with memory that has been dynamically allocated
+with calloc or malloc, you should give it back with free. the 1 argument 
+is a pointer to the beginning of the allocatedmemory. 
+
+free (dataPtr); 
+
+ex: assume listEnd points to the end of a linked list of type struct entry, 
+defined as 
+
+struct entry {
+	int		value;
+	struct entry *next;
+};
+
+

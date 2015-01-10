@@ -1,0 +1,10 @@
+When a function is defined, it can be static or extern, but it does not 
+have to be defined extern to beused in other files. 
+
+ex:
+
+static double squareRoot (double x) { ... }
+
+makes the squareRoot function local to the file. 
+
+

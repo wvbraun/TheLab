@@ -1,0 +1,5 @@
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\SwitchStatement\SwitchStatement\bin\Debug\SwitchStatement.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\SwitchStatement\SwitchStatement\bin\Debug\SwitchStatement.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\SwitchStatement\SwitchStatement\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\SwitchStatement\SwitchStatement\obj\x86\Debug\SwitchStatement.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\SwitchStatement\SwitchStatement\obj\x86\Debug\SwitchStatement.pdb

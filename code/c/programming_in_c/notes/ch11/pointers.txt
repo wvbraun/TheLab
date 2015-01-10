@@ -1,0 +1,67 @@
+Const and Pointers 
+
+Assume the following declarations:
+
+char c = 'X';
+char *charPtr = &c;
+
+The pointer charPtr is set pointing to c. If the pointer is always
+set pointing to c, it can be declared as a const pointer:
+
+char * const charPtr = &c; 
+
+So a statment like:
+charPtr = &d; // is not valid 
+
+causes the GNU C complier to give message like:
+
+foo.c:10: warning: assingmnet of read-only variable 'charPtr'
+
+--
+If the location pointed to by charPtr will not change through the 
+pointer charPtr, it can be noted like:
+
+const char *charPtr = &c;
+
+-----------------------------
+
+Pointers and Functions
+
+You can pass a pointer as an argument to a function. 
+
+To pass the pointer list_pointer to a function named print_list:
+
+print_list (list_pointer);
+
+Inside the print_list routine, the formal paramter must be 
+declared to be a pointer to the approiate type:
+
+void print_list (struct entry *pointer) 
+{
+	....
+}
+
+---------------------------------------------------
+Pointers and Arrays
+
+If you have an array of 100 integers called values, you can define
+a pointer called valuesPtr, which can be used to access the 
+integers contained in this array with the statement
+
+int *valuesPtr;
+-------
+
+when you define a pointer that is used to point to the element of
+an array, you do not designate the pointer as type
+"pointer to array"; rather, you designate the pointer as pointing
+to the type of element that is in the array. 
+
+If you have an array of chars called text, you could define a 
+pointer to be used to point to elements in text:
+
+char *textPtr;
+-----
+
+To set valuesPtr to the first element in the values array:
+
+valuesPtr = values;

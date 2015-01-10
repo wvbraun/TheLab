@@ -1,0 +1,5 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\NamedOptionalParams\bin\Debug\NamedOptionalParams.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\NamedOptionalParams\bin\Debug\NamedOptionalParams.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\NamedOptionalParams\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\NamedOptionalParams\obj\x86\Debug\NamedOptionalParams.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\NamedOptionalParams\obj\x86\Debug\NamedOptionalParams.pdb

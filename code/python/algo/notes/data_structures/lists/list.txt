@@ -1,0 +1,90 @@
+List - 
+    A list is a collection of items where each item holds a 
+    relative position with respect to the others. We can refer
+    to this type of list as an unordered list. We can consider
+    the list as having a first item, a second item, etc. We can
+    refer to the beginning of the list (the first item) or the
+    end of the list (the last item). 
+
+-------------------------------------------------
+The Unordered List Abstract Data Type
+
+	- List(): creates a new list that is empty. It needs no
+			parameters and returns an empty list. 
+
+	- add(item): addds a new item to the list. It needs the 
+			item and modifies the list. Assume the item is 
+			present in the list. 
+
+	- remove(item): removes the item from the list. It needs the
+			item and modifies the list. Assume the item is 
+			present in the list. 
+
+	- search(item): search for the item in the list. It needs 
+			the item and returns a boolean value. 
+
+	- isEmpty(): tests to see whether the list is empty. It needs
+			no parameters and returns a boolean value. 
+
+	- size(): returns the number of items in the list. It needs
+			no parameters and returns an integer. 
+
+	- append(item): adds a new item to the end of the list making
+			it the last item in the collection. It needs the item
+			and returns nothing. Assume the item is not already
+			in the list. 
+
+	- index(item): returns the position of the item in the list. 
+			It needs the item and returns the index. 
+
+	- insert(pos, item): adds a new item to the list at position
+			pos. It needs the item and returns nothing. Assume
+			the item is not alreayd in the list and there are 
+			enough existing items to having position pos. 
+
+	- pop(): removes and returns the last item in the list. It
+			needs nothing and returns an item. Assume the list
+			has at least one item. 
+
+	- pop(pos): removes and returns the item and position pos. 
+			It needs the position and returns the item. 
+
+
+linked list traversal: 
+	Traversal refers to the process of systematically visiting 
+	each node. To do this we use an external reference that 
+	starts at the first node in the list. As we visit each node, 
+	we move the reference to the next mode by 'traversing' the
+	next refernce. 
+
+------------------------------------------------------------
+The Ordered List Abstract Data Type:
+
+	- OrderedList(): creates a new ordered list that is empty.
+			It needs no parameters and returns empty list.
+	
+	- add(item): adds a new item to the list making sure that
+			the order is preserved. It needs the item and returns
+			nothing. Assume the item is not already in the list.
+
+	- remove(item): removes the item from the list. It needs
+			the item and modifies the list. Assume item is in list. 
+
+	- search(item): searches for the item in the list. It needs
+			the item and returns a boolean value. 
+
+	- isEmpty(): tests to see whether the list is empty. It needs
+			no parameters and returns a boolean value. 
+
+	- size(): returns the number of items in the list. It needs
+			no parameters and returns an integer. 
+
+	- index(item): returns the position of item in the list. 
+			It needs the item and returns the index. Assume item
+			is in the list. 
+
+	- pop(): removes and returns the last item in the list. 
+			It needs no parameters and returns as item. 
+			Assume the list has at least one item.
+
+	- pop(pos): removes and returns the item as position pos. 

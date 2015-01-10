@@ -1,0 +1,38 @@
+Inflix - The operator is in between the two operands that it is
+		working on. ex: B * C
+
+ex: A + B * C - using operator precedence we see that B and C
+			are multiplied first, then A is added. 
+			Can also be written as (A + (B * C))
+
+Preflix - Requires all operators precede the two operands they
+		work on. ex: + A B 
+
+Postflix - Requires operators follow the two operands.
+		ex: A B +
+
+
+------------------------------------
+Conversion of Inflix expressions to Postflix:
+
+ex: A + B * C == A B C *+
+
+Steps to produce string of tokens in postflix order:
+
+1. Create an empty stack called opstack for keeping operators. 
+Create an empty list for output. 
+
+2. Convert the input inflix string to a list by using split. 
+
+3. Scan the token list from left to write. 
+	- if the token is an operand, append it to the end of output list. 
+	- if token is a left paranthesis, pop the opstack until the
+		corresponding left paranthesis is removed. Append each 
+		operatorto the end of the output list. 
+	- if the token is an operator, *, /, +,or -, push it on the 
+		opstack. First remove any operators already on the opstack
+		that have higher or equal precedence and append them to
+		the output list. 
+	- when the input expression has been completely processed, 
+		check the opstack. Any operators still on the stack can
+		be removed and appended to the end of the output list. 

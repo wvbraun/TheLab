@@ -1,0 +1,7 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingStructs\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingStructs\bin\Release\UsingStructs.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingStructs\bin\Release\UsingStructs.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingStructs\obj\x86\Release\UsingStructs.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingStructs\obj\x86\Release\UsingStructs.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch7\UsingStructs\UsingStructs\obj\x86\Release\UsingStructs.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch7\UsingStructs\UsingStructs\obj\x86\Release\UsingStructs.pdb

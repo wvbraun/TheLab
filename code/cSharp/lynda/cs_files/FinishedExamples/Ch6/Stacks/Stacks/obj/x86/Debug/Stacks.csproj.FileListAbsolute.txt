@@ -1,0 +1,5 @@
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Stacks\Stacks\bin\Debug\Stacks.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Stacks\Stacks\bin\Debug\Stacks.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Stacks\Stacks\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Stacks\Stacks\obj\x86\Debug\Stacks.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Stacks\Stacks\obj\x86\Debug\Stacks.pdb

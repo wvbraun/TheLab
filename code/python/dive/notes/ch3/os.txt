@@ -1,0 +1,76 @@
+Python 3 comes with a module called os. 
+
+The current working directory:
+
+the os module contains 2 functions to deal with current working
+directory:
+
+>>> import os
+>>> print(os.getcwd())
+/home/brandon/code/python/dive/notes/ch3
+>>> os.chdir('/home/brandon')
+>>> print(os.getcwd())
+/home/brandon
+
+---------------------------------------
+Working with filenames and dirnames
+
+os.path module
+
+>>> print(os.path.join('/home/brandon/code/python/dive/notes', 'wut.py'))
+/home/brandon/code/python/dive/notes/wut.py
+>>> print(os.path.expanduser('~'))
+/home/brandon
+>>> pathname = '/home/brandon/wut/wut.py'
+>>> os.path.split(pathname)
+('/home/brandon/wut', 'wut.py')
+>>> dirname, filename = os.path.split(pathname)
+>>> dirname
+'/home/brandon/wut'
+>>> filename
+'wut.py'
+>>> (shortname, extension) = os.path.splitext(filename)
+>>> shortname
+'wut'
+>>> extension
+'.py'
+
+
+-------------------------------------------
+listing directories 
+
+the glob module is an easy way to get the contents of a dir. 
+
+>>> os.chdir('/home/brandon/code/projects/python/workout')
+>>> import glob
+>>> glob.glob('*.py')
+[code.py, workout.py]
+>>> glob.glob('*.sql')
+[code.sql, lower.sql, upper.sql, full.sql]
+
+
+---------------------------------------
+Getting file metadata:
+
+>>> os.chdir('/home/brandon/code/projects/python/workout')
+>>> metadata = os.stat('workout.py')
+>>> metadata.st_tmtime
+1386405179.1725526
+>>> import time
+>>> time.localtime(metadata.st_mtime)
+time.struct_time(tm_year=2013, tm_mon=12, tm_mday=7, tm_hour=3,
+tm_min=32, tm_sec=59, tm_wday=5, tm_yday=341, tm_isdst=0)
+>>> metadata.st_size
+4264
+import humansize
+>>> humansize.aprroximate_size(metadata.st_size)
+
+-----------------------------------------------
+Constructing Absolute Pathnames
+
+>>> print(os.getcwd())
+/home/brandon/code/projects/python/workout
+>>> print(os.path.realpath('workout.py'))
+/home/brandon/code/projects/python/workout/workout.py
+
+

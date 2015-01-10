@@ -1,0 +1,5 @@
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Dictionaries\Dictionaries\bin\Release\Dictionaries.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Dictionaries\Dictionaries\bin\Release\Dictionaries.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Dictionaries\Dictionaries\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Dictionaries\Dictionaries\obj\x86\Release\Dictionaries.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Dictionaries\Dictionaries\obj\x86\Release\Dictionaries.pdb

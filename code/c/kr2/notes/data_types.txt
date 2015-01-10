@@ -1,0 +1,72 @@
+Signed vs Unsigned:
+ - A signed integer variable can contain a numerical data value within the range -32768 to 32767
+
+ - An unsigned integer variable can contain a numerical data value within the range of 0 to 65535
+
+-----------------------------------------------------------------------
+
+Basic Types:
+
+char: smallest addressable unit of the machine that can contain basic character set. It is an integer type. 
+	- signed char 
+	- unsigned char 
+
+-----
+short 			|   short signed integer type, at least 16 bits
+short int 		|   in size. 
+signed short 		|
+signed short int 	|
+
+	- unsigned short 
+	- unsigned short int 
+
+-----
+int 	   |	Basic signed integer type, at least 16 bits. 
+signed int |
+
+unsigned 
+unsigned int 
+
+-----
+long 			| long singed integer, at least 32 bits. 
+long int 		|
+signed long 		|
+signed long int 	|
+
+unsigned long 
+unsigned long int 
+
+-----
+long long 		| long long signed integer, at least 64 bits. 
+long long int 		|
+signed long long 	|
+signed long long int    |
+
+unsigned long long 
+unsigned long long int 
+
+-----
+float:
+	Signle precision floating point type. 
+
+-----
+double:
+	double precesion floating point type 
+
+----
+long double:
+	extended precision floating-point type 
+
+--------------------------------------------------------------
+
+int ex: 1234 
+long int ex: 1234L or 1234l
+unsigned long int ex: 1234UL or 1234ul
+
+---
+float ex: 123.4f or 123.4F
+double ex: 123.4l or 123.4L
+
+----
+
+the characther constant '\0' represents the character with zero value. 

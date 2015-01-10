@@ -1,0 +1,10 @@
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch6\Queues\Queues\bin\Debug\Queues.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch6\Queues\Queues\bin\Debug\Queues.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch6\Queues\Queues\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch6\Queues\Queues\obj\x86\Debug\Queues.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch6\Queues\Queues\obj\x86\Debug\Queues.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Queues\Queues\obj\x86\Debug\Queues.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Queues\Queues\obj\x86\Debug\Queues.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Queues\Queues\bin\Debug\Queues.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Queues\Queues\bin\Debug\Queues.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Queues\Queues\obj\x86\Debug\ResolveAssemblyReference.cache

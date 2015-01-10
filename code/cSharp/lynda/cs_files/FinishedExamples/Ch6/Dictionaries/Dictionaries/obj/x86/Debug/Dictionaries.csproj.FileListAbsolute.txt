@@ -1,0 +1,7 @@
+C:\Users\joemarin\AppData\Local\Temporary Projects\Dictionaries\bin\Debug\Dictionaries.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\Dictionaries\bin\Debug\Dictionaries.pdb
+C:\Users\joemarin\AppData\Local\Temporary Projects\Dictionaries\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarin\AppData\Local\Temporary Projects\Dictionaries\obj\x86\Debug\Dictionaries.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\Dictionaries\obj\x86\Debug\Dictionaries.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Dictionaries\Dictionaries\obj\x86\Debug\Dictionaries.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Dictionaries\Dictionaries\obj\x86\Debug\Dictionaries.pdb

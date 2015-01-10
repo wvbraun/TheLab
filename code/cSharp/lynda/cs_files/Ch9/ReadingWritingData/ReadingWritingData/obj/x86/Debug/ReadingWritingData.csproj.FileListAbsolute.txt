@@ -1,0 +1,10 @@
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch9\ReadingWritingData\ReadingWritingData\bin\Debug\ReadingWritingData.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch9\ReadingWritingData\ReadingWritingData\bin\Debug\ReadingWritingData.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch9\ReadingWritingData\ReadingWritingData\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch9\ReadingWritingData\ReadingWritingData\obj\x86\Debug\ReadingWritingData.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch9\ReadingWritingData\ReadingWritingData\obj\x86\Debug\ReadingWritingData.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\ReadingWritingData\ReadingWritingData\obj\x86\Debug\ReadingWritingData.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\ReadingWritingData\ReadingWritingData\obj\x86\Debug\ReadingWritingData.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\ReadingWritingData\ReadingWritingData\bin\Debug\ReadingWritingData.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\ReadingWritingData\ReadingWritingData\bin\Debug\ReadingWritingData.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\ReadingWritingData\ReadingWritingData\obj\x86\Debug\ResolveAssemblyReference.cache

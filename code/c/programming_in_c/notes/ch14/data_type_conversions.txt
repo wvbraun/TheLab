@@ -1,0 +1,50 @@
+Type cast:
+
+ex: 
+
+average = (float) total / n;
+
+the value of the variable total is converted to type float 
+before the operationis performed. 
+
+---------------------------------------------------------
+The C complier adheres to strict rules when it comes to 
+evaluating expressions that consist of different data types. 
+
+1. If either operand is of type long double, the other is 
+converted to long double, and the is the type of the result. 
+
+2. If either operand is of type double, the other is converted
+to double. 
+
+3. If either operand is of type float, the other is converted
+to float. 
+
+4. If either operand is of type _Bool, char, short int, 
+bit field, or an enum, it is converted to int. 
+
+5. If either operand is of type long long int, the other is 
+converted to long long int. 
+
+6. If either operand is of type long int, the other is 
+converted to long int. 
+
+7. If this step is reached, both operands are of type int. 
+
+------
+Ex: f is a float, i an in, l a long int, s a short int. 
+
+f * i + l / s
+
+f*i, from step 3, because f is a float, the other operand i is
+also converted into a float. 
+
+l / s, from step 4, since s in a short int, it is converted 
+converted to int. 
+
+l / s, from step 6, since l is a long int, s is converted to
+long int. 
+
+step 3, (f*i) - float + (l / s) - long int, since (f*i) is 
+of type float, (l / s) is converted to float. 
+

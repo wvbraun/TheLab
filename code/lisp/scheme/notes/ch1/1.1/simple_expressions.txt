@@ -1,0 +1,256 @@
+The simplest Scheme expressions are constant data objects, such as
+strings, numbers, symbols, and lists. 
+
+(+ 5 1)
+=> 6
+(- 5 1)
+=> 4
+(* 5 2)
+=> 10
+(/ 10 2)
+=> 5
+
+Scheme employs prefix notation even for common arithmetic operations. 
+Any procedure application is written as (procedure arg ...)
+
+Procedure applications may be nested, innermost values are computed
+first:
+
+(+ (+ 2 2) (+ 2 2))
+=> 8 
+(* 2 (* 2 (* 2 (* 2 2 ))))
+=> 32
+
+------------------------------------------------------------------
+List
+
+Scheme uses lists to store aggreate data containing two or more
+values. Lists are written as sequences of objects surrounded by
+parentheses.
+Ex: (1 2 3 4 5) is a list of numbers 
+Ex: ("this" "is" "a" "list") is a list of strings. 
+
+---
+
+Lists do not have to contain only one type of object. 
+ex: (4.2 "hi") is a valid list containing a number and string. 
+
+---
+
+Lists may be nested(which may contain other lists)
+ex: ((1 2) (3 4)) is a vlid list with 2 elements, each a list of 2 elements. 
+
+-----------------------
+
+How does scheme distinguish between a list of objects, (obj1 obj2 ...), 
+and a procedure applications (procedure arg ...)?
+
+Well we must explicitliy tell scheme to treat a list as data rather
+than as a procedure application. We do this with quote:
+
+(quote (1 2 3 4 5)) 
+=> (1 2 3 4 5)
+
+The quote forces the list to be treated as data. 
+Scheme recognizes a single quotation mark (') preceding an expression
+as an abbreviation for quote:
+
+'(1 2 3 4) 
+=> (1 2 3 4)
+'((1 2) (3 4))
+=> ((1 2) (3 4))
+
+Both forms are referred to as quote expressions. We often say an object
+is quoted when it is enclosed in a quote expression. 
+
+-----
+A quote expression is not a procedure application. 
+Not all quote expressions involve lists. 
+
+Numbers and strings can be quoted, but they are treated as constants
+so quoting them is unnecessary:
+
+'2
+=> 2
+'2/3
+=> 2/3
+(quote "Hi Mom!")
+=> "Hi Mom!"
+
+------------------------------------
+Scheme procedures for manipulating lists:
+
+Two basic procedures for taking lists apart: 
+
+	- car: returns the first element of a list
+	- cdr: returns the remainder of the list
+
+Ex:
+
+(car '(a b c))
+=> a
+(cdr '(a b c))
+=> (b c)
+(cdr '(a))
+=> ()
+
+(car (cdr '(a b c)))
+=> b ; cdr '(a b c) = (b c), car '(b c) = (b)
+
+(cdr (cdr '(a b c))) 
+=> (c) 
+
+(car '((a b) (c d)))
+=> (a b)
+(cdr '((a b) (c d)))
+=> ((c d))
+
+The first element of a list is often called the 'car' of the list
+and the rest is often called the 'cdr'. The cdr of a list with
+one element is (), the empty list. 
+
+------
+The procedure cons constructs lists. It takes 2 arguments. 
+The 2nd argument is usually a list, and in that case cons 
+returns a list. 
+
+Ex:
+
+(cons 'a '())
+=> (a)
+(cons 'a '(b c))
+=> (a b c)
+(cons 'a (cons 'b (cons 'c '())))
+=> (a b c)
+(cons '(a b) '(c d))
+=> ((a b) c d)
+
+(car (cons 'a '(b c)))
+=> a
+(cdr (cons 'a '(b c)))
+=> (b c)
+(cons (car '(a b c))
+	  (cdr '(d e f)))
+=> (a e f)
+
+(cons (car '(a b c))
+	  (cdr '(a b c)))
+=> (a b c)
+
+Creating a new list by adding an element to the beginning of a list
+is referred to as consing the element onto the list. 
+
+------------
+
+The procedure 'cons' actually builds 'pairs', and there is no reason
+that the cdr of a pair must be a list. A list is a sequence of pairs;
+each pair's cdr is the next pair in the sequence:
+
+[a][]->[b][]->[c][]->[d][()]
+
+The cdr of the last pair in a 'proper list' is the empty list. 
+Otherwise, the sequence of pairs forms an 'improper list'. 
+
+An improper list is printed in 'dotted-pair notation', with 
+a period, or dot, preceding the final element of the list. 
+
+Ex:
+
+(cons 'a 'b) 
+=> (a . b)
+
+(cdr '(a . b))
+=> b
+
+(cons 'a '(b . c))
+=> (a b . c)
+
+A pair whose cdr is not a list is often called a 'dotted pair'. 
+Even pairs whose cdrs are lists can be writen in dotted-pair notation,
+although the printer always choses to write proper lists 
+without dots. 
+
+'(a . (b . (c .())))
+=> (a b c)
+
+
+-----------------------------------------------------------------------
+Exercises:
+
+1. Convert the following arithmetic expressions into Scheme expressions
+and evaluate them. 
+
+	a. 1.2 x (2 - 1/3) + -8.7
+	a) (+ (* 1.2 (- 2 1/3)) -8.7)
+
+	b. (2/3 + 4/9) / (5/11 - 4/3)
+	b) (/ (+ 2/3 4/9) (- 5/11 4/3))
+
+	c. 1 + 1 / (2 + 1 / (1 + .5))
+	c) (+ 1 (/ 1 (+ 2 (/ 1 (+ 1 .5)))))
+
+	d. 1 x -2 x 3 x -4 x 5 x -6 x 7
+	d) (* (* (* (* (* (* 1 -2) 3) -4) 5) -6) 7)
+
+
+2. Determine the values of the following expressions:
+
+	a. (cons 'car 'cdr)
+	a) (car . cdr)
+
+	b. (list 'this '(is silly))
+	b) (this (is silly))
+
+	c. (cons 'is '(this silly?))
+	c) (is this silly?)
+
+	d. (quote (+ 2 3))
+	d) (+ 2 3)
+
+	e. (cons '+ '(2 3))
+	e) (+ 2 3)
+
+	f. (car '(+ 2 3))
+	f) +
+
+	g. (cdr '(+ 2 3))
+	g) (2 3)
+
+	h. cons
+	h) #<procedure>
+
+	i. (quote cons)
+	i) cons
+
+	j. (quote (quote cons))
+	j) 'cons
+	
+	k. (car (quote (quote cons)))
+	k) quote
+
+	l. (+ 2 3)
+	l) 5
+
+	m. (+ '2 '3)
+	m) 5
+
+	n. (+ (car '(2 3)) (car (cdr '(2 3))))
+	n) 5
+
+	o. ((car (list + - * /)) 2 3)
+	o) 5
+
+
+3. (car (car '((a b) (c d)))) yields a. Determine which compositions
+of car and cdr applied to ((a b) (c d)) yield b, c, and d. 
+
+	b. (car (cdr (car '((a b) (c d)))))
+	c. (car (car (cdr '((a b) (c d)))))
+	d. (car (cdr (cdr '((a b) (c d)))))
+
+
+
+
+
+
+

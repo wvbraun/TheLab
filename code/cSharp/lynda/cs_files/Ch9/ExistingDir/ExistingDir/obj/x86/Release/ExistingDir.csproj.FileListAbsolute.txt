@@ -1,0 +1,5 @@
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\ExistingDir\ExistingDir\bin\Release\ExistingDir.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\ExistingDir\ExistingDir\bin\Release\ExistingDir.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\ExistingDir\ExistingDir\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\ExistingDir\ExistingDir\obj\x86\Release\ExistingDir.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\ExistingDir\ExistingDir\obj\x86\Release\ExistingDir.pdb

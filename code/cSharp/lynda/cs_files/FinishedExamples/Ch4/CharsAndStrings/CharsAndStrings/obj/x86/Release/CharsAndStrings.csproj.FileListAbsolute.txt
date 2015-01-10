@@ -1,0 +1,5 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\CharsAndStrings\bin\Release\CharsAndStrings.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\CharsAndStrings\bin\Release\CharsAndStrings.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\CharsAndStrings\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\CharsAndStrings\obj\x86\Release\CharsAndStrings.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\CharsAndStrings\obj\x86\Release\CharsAndStrings.pdb

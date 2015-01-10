@@ -1,0 +1,7 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingExceptions\bin\Debug\UsingExceptions.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingExceptions\bin\Debug\UsingExceptions.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingExceptions\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingExceptions\obj\x86\Debug\UsingExceptions.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingExceptions\obj\x86\Debug\UsingExceptions.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch8\UsingExceptions\UsingExceptions\obj\x86\Debug\UsingExceptions.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch8\UsingExceptions\UsingExceptions\obj\x86\Debug\UsingExceptions.pdb

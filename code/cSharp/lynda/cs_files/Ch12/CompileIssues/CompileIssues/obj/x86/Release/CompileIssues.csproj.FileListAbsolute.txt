@@ -1,0 +1,6 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\CompileIssues\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch12\CompileIssues\CompileIssues\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch12\CompileIssues\CompileIssues\bin\Release\CompileIssues.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch12\CompileIssues\CompileIssues\bin\Release\CompileIssues.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch12\CompileIssues\CompileIssues\obj\x86\Release\CompileIssues.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch12\CompileIssues\CompileIssues\obj\x86\Release\CompileIssues.pdb

@@ -1,0 +1,34 @@
+package code.interview.hackerRank.algorithms.search;
+
+import java.util.Scanner;
+
+/**
+ * Problem Statement
+ * Mr K has a rectangular land (m x n). There are marshes in the land where the fence cannot hold. Mr K 
+ * wants you to find the perimeter of the largest rectangular fence that can be built on this land.
+ * 
+ * Input format
+ * First line contains m and n. The next m lines contains n characters describing the state of the land. 
+ * 'x' (ascii value: 120) if it is a marsh and '.' ( ascii value:46) otherwise.
+ * 
+ * Constraints
+ * 2<=m,n<=500
+ * 
+ * Output Format
+ * Output contains a single integer - the largest perimeter. If the rectangular fence cannot be built, 
+ * print "impossible" (without quotes)
+ * 
+ * Sample Input:
+ * 4 5
+ * .....
+ * .x.x.
+ * .....
+ * .....
+ *
+ * Sample Output:
+ * 14
+ */
+
+public class MrKMarsh {
+
+}

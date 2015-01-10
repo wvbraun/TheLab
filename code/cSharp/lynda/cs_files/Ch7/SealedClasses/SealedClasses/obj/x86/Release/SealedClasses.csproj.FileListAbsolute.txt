@@ -1,0 +1,13 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\SealedClasses\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\SealedClasses\bin\Release\SealedClasses.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\SealedClasses\bin\Release\SealedClasses.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\SealedClasses\obj\x86\Release\SealedClasses.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\SealedClasses\obj\x86\Release\SealedClasses.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch7\SealedClasses\SealedClasses\obj\x86\Release\SealedClasses.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch7\SealedClasses\SealedClasses\obj\x86\Release\SealedClasses.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch7\SealedClasses\SealedClasses\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch7\SealedClasses\SealedClasses\obj\x86\Release\SealedClasses.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch7\SealedClasses\SealedClasses\obj\x86\Release\SealedClasses.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch7\SealedClasses\SealedClasses\bin\Release\SealedClasses.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch7\SealedClasses\SealedClasses\bin\Release\SealedClasses.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch7\SealedClasses\SealedClasses\obj\x86\Release\ResolveAssemblyReference.cache

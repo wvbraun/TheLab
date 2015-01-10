@@ -1,0 +1,1 @@
+__str__ is used to convert anobject into a string. 

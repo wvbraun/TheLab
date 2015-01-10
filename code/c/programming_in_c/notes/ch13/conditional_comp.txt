@@ -1,0 +1,84 @@
+The #ifdef, #endif, #else, and #ifndef statements:
+
+ex:
+
+#ifdef UNIX
+#	define DATADIR	"/uxn1/data"
+#else 
+#	define DATADIR	"\usr\data"
+#endif
+
+---------------------------------------------------------
+
+Avoiding multiple inclusion of header files
+
+The #ifndef statement is often used to avoid multiple inclusion
+of a file in a program. For example, inside a header file, if
+you want to make certain it is included only once in a program, 
+you can define a unique identifer that can be tested later. 
+Consider:
+
+#ifndef _MYSTDIO_H
+#define _MYSTDIO_H
+ ...
+#endif // _MYSTIDO_H
+
+suppose you typed this into a file called mystdio.h. If you 
+included it with #inlcude "mystdio.h"
+
+the #ifndef would test wheter _MYSTDIO_H were define
+
+------------------------------------------------------
+The #if and #elif statments
+
+The #if statment can be used to test whether a constant expression
+evaluates to nonzero. If the result is nonzero, subsequent lines
+up to a #else, #elif, or #endif ar processed. 
+
+Assume you define the name OS, which is set to 1 if the OS is
+OSX and 2 if the OS is Windows, and 3 if the OS is linux. You could
+write a sequence of statments like:
+
+#if	OS == 1 // OSX
+ ...
+#elif	OS == 2 // windows 
+ ...
+#elif	OS == 3 // linux 
+ ...
+#else 
+ ...
+#endif
+
+gcc -D OS=2 program.c
+
+compiles program.c with the name OS defined as 2. 
+
+---------
+The special operator 
+defined (name) 
+
+cane also be used in #if statments. 
+ex:
+
+#if defined (DEBUG)
+ ...
+#end if 
+
+and 
+
+#ifdef DEBUG
+ ...
+#endif
+
+do the same thing. 
+
+----------------------------------------------------------------
+The #undef statement
+
+The #undef statment causes a defined name to become undefined. 
+
+#undef name 
+
+
+
+

@@ -1,0 +1,10 @@
+C:\Users\joemarin\AppData\Local\Temporary Projects\Loops\bin\Debug\Loops.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\Loops\bin\Debug\Loops.pdb
+C:\Users\joemarin\AppData\Local\Temporary Projects\Loops\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarin\AppData\Local\Temporary Projects\Loops\obj\x86\Debug\Loops.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\Loops\obj\x86\Debug\Loops.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\Loops\Loops\obj\x86\Debug\Loops.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\Loops\Loops\obj\x86\Debug\Loops.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\Loops\Loops\bin\Debug\Loops.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\Loops\Loops\bin\Debug\Loops.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\Loops\Loops\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,110 @@
+
+BinaryTree() - creates a new instance of a binary tree.
+
+getLeftChild() - returns the binary tree corresponding to the left child of the current node. 
+
+getRightChild() - returns the binary tree corresponding to the right child of the current node. 
+
+setRootVal(val) - stores the object in parameter val in the current node. 
+
+getRootVal() - returns the object stored in the current node. 
+
+insertLeft(val) - creates a new binary tree and installs it as the left child of the current node. 
+
+insertRight(val) - creates a new binary tree and installs it as the right child of the current node. 
+
+-----------------------------------------------------------------------------------------------------
+List of Lists Representation 
+
+In a tree represented by a list of lists, we will begin with Python's list data structure and write
+the functions defined above. 
+
+In a list of lists tree, we will store the value of the root node as the first element of the list. 
+The second element will itself be a list that represents the left subtree. The third element will 
+be another list that represents the right tree. 
+
+myTree = ['a', #root
+	['b', #left subtree
+	 ['d' [], []], 
+	 ['e' [], []] ], 
+	['c', # right subtree
+	 ['f' [], []], 
+	 [] ]
+]
+
+Notice that we can access subtrees of the list using standar list indexing. The root of the tree is
+myTree[0], the left subtree of the root is myTree[1] and the right is myTree[2]. 
+
+
+----------------------------------------------------------------------------------------------------
+Nodes and References
+
+	Our second method to represent a tree uses nodes and references. In this case we will define
+	a class that has attributes for the root value, as well as the left and right subtrees. 
+
+	We will start out with a simple class definitions for the nodes and references. The important
+	thing to remember about this representation is that the attributes left and right will become
+	references to other instances of the BinaryTree class. For example, when we insert a new 
+	left child into the tree, we create another instance of BinaryTree and modify self.leftChild
+	in the root to reference the new tree.
+
+
+class BinaryTree:
+	def __init__(self, rootObj):
+		self.key = rootObj
+		self.leftChild = None
+		self.rightChild = None
+
+	# notice that the constructor function, __init__(self, rootObj), expects to get some kind of
+	# object to store in the root. Just like you can store any object in a list, the root object
+	# of a tree can be a reference to any object. 
+	
+---------------
+	For our early examples, we willstore thename of the node as the root value. 
+	
+	Let's look at the functions we need to build the tree beyond the root node. To add a left child
+	to the tree, we willcreate a new binary tree object and set the left attribute of the root
+	to refer to this new object. 
+
+	# we must consider 2 cases for insertion
+
+	
+	def insertLeft(self, newNode):
+
+		# 1st case - if there is a node with no existing left child
+		# we simply add a node to the tree
+		if self.leftChild == None:
+			self.leftChild = BinaryTree(newNode)
+
+		# 2nd case - if there is a node with an existing left child
+		# we insert a node and push the existing child down one level in the tree. 
+		else:
+			t = BinaryTree(newNode)
+			t.leftChild = self.leftChild 
+			self.leftChild = t
+
+
+	def insertRight(self, newNode):
+
+		if self.rightChild == None:
+			self.rightChild = BinaryTree(newNode)
+
+		else:
+			t = BinaryTree(newNode)
+			t.rightChild = self.rightChild
+			self.rightChild = t
+
+	
+	def getRightChild(self):
+		return self.rightChild
+
+	def getLeftChild(self):
+		return self.leftChild
+
+	def setRootVal(self, obj):
+		self.key = obj
+
+	def getRootVal(self):
+		return self.key
+
+	

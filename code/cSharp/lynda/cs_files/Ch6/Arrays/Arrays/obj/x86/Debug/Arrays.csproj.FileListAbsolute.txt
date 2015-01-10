@@ -1,0 +1,17 @@
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\Arrays\Arrays\bin\Debug\Arrays.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\Arrays\Arrays\bin\Debug\Arrays.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\Arrays\Arrays\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\Arrays\Arrays\obj\x86\Debug\Arrays.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\Arrays\Arrays\obj\x86\Debug\Arrays.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Arrays\Arrays\obj\x86\Debug\Arrays.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Arrays\Arrays\obj\x86\Debug\Arrays.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Arrays\Arrays\bin\Debug\Arrays.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Arrays\Arrays\bin\Debug\Arrays.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Arrays\Arrays\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch6\Arrays\Arrays\obj\x86\Debug\Arrays.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch6\Arrays\Arrays\obj\x86\Debug\Arrays.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Arrays\Arrays\obj\x86\Debug\Arrays.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Arrays\Arrays\obj\x86\Debug\Arrays.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Arrays\Arrays\bin\Debug\Arrays.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Arrays\Arrays\bin\Debug\Arrays.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\Arrays\Arrays\obj\x86\Debug\ResolveAssemblyReference.cache

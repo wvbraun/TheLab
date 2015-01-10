@@ -1,0 +1,17 @@
+C:\Users\joemarin\AppData\Local\Temporary Projects\ArrayLists\bin\Debug\ArrayLists.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\ArrayLists\bin\Debug\ArrayLists.pdb
+C:\Users\joemarin\AppData\Local\Temporary Projects\ArrayLists\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarin\AppData\Local\Temporary Projects\ArrayLists\obj\x86\Debug\ArrayLists.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\ArrayLists\obj\x86\Debug\ArrayLists.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\ArrayLists\ArrayLists\obj\x86\Debug\ArrayLists.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\ArrayLists\ArrayLists\obj\x86\Debug\ArrayLists.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\ArrayLists\ArrayLists\bin\Debug\ArrayLists.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\ArrayLists\ArrayLists\bin\Debug\ArrayLists.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\ArrayLists\ArrayLists\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch6\ArrayLists\ArrayLists\obj\x86\Debug\ArrayLists.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch6\ArrayLists\ArrayLists\obj\x86\Debug\ArrayLists.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\ArrayLists\ArrayLists\obj\x86\Debug\ArrayLists.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\ArrayLists\ArrayLists\obj\x86\Debug\ArrayLists.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\ArrayLists\ArrayLists\bin\Debug\ArrayLists.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\ArrayLists\ArrayLists\bin\Debug\ArrayLists.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch6\ArrayLists\ArrayLists\obj\x86\Debug\ResolveAssemblyReference.cache

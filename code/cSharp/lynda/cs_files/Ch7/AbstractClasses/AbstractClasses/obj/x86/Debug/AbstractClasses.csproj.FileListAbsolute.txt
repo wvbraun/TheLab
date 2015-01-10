@@ -1,0 +1,5 @@
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch7\AbstractClasses\AbstractClasses\bin\Debug\AbstractClasses.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch7\AbstractClasses\AbstractClasses\bin\Debug\AbstractClasses.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch7\AbstractClasses\AbstractClasses\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch7\AbstractClasses\AbstractClasses\obj\x86\Debug\AbstractClasses.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch7\AbstractClasses\AbstractClasses\obj\x86\Debug\AbstractClasses.pdb

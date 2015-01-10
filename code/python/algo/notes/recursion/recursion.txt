@@ -1,0 +1,92 @@
+Recursion -
+	A method of solving problems that involves breaking a problem
+	down into smaller subproblems until you get to a small enough
+	problem that it can be easily solved. Usually recursion 
+	involves a function calling itself. 
+
+
+---------------------------------------------------------
+The Three Laws of Recursion
+
+	1. A recursive algorithm must have a base case.
+
+	2. A recursive algorithm must change its state and move 
+	towards the base case. 
+	
+	3. A recursive algorithm must call itself, recursively. 
+
+---------------------------------------------------------
+
+Tower of Hanoi 
+
+High level outline of how to move a tower from the starting
+pole, to the goal pole, using an intermediate pole:
+
+	1. Move a tower of height-1 to an intermediate pole,
+	using the final pole. 
+
+	2. Move the remaining disk to the final pole. 
+
+	3. Move the tower of height-1 from the intermediate pole,
+	to the final pole using the original pole. 
+
+As long as we always obey the rule that the larger disks 
+remain on the bottom of the stack, we can use the three
+steps recursively, treating any larger disks as though 
+they were not there. 
+
+Base case: tower of one. 
+
+------------------------------------------------
+Maze
+
+We will assume our maze is divided into squares. Each square
+of the maze is either open or occupied by a section of wall. 
+The Turtle can only pass through the open squares of the 
+maze. If the turtle bumps into a wall, it must try a different
+direction:
+
+	- From our startingposition we will first try going North
+	one square and then recursively try our procedure from
+	there. 
+	- If we are not successful by trying a Northern path as
+	the first step then we will take a step to the south and
+	recursively repeat the procedure. 
+	- If South does not work, then we will try a step to the
+	West as our final step and recursively apply the procedure.
+	- If North, South, and West are unsuccessful, then we will
+	apply the procedure recursively from a position one step
+	to our east. 
+	- If none of these work, then there is no way to get out. 
+
+Base Cases:
+	
+	1. The turtle has run into a wall. Since the square is
+	occupied by a wall no further exploration can take place.
+	
+	2. The turtle has found a square that has already been 
+	explored. We do not want to continue exploring from 
+	this position or we will get into a loop. 
+
+	3. We have found an outside edge, not occupied by a wall.
+	In other words, we have found an exit. 
+
+	4. We have explored a square unsuccessfully in all directions. 
+
+For our program to work we will need to have a way to 
+represent the maze. The maze object will provide the 
+following methods for us to use:
+
+	- __init__: reads in a data file representing a maze,
+	initializes the internal representation of the maze,
+	and finds the starting position for the turtle. 
+
+	- drawMaze: Draws the maze in a window on screen. 
+
+	- updatePosition: Updates the internal representation 
+	of the maze and changes the position of the turtle in 
+	the window. 
+
+	- isExit: Checks to see if the current position is an exit. 
+
+

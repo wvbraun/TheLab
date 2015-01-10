@@ -1,0 +1,6 @@
+Pearson Correlation Score 
+
+One way to determine the similarity between people's interest is
+to use a Pearson correlation coeeficient. The correlation
+coefficient is a measure of how well two sets of data fit on a 
+straight line. 

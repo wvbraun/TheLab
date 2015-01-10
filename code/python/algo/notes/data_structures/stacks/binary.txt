@@ -1,0 +1,26 @@
+Converting Decimal Numbers to Binary Numbers:
+
+algorithm called 'divide by 2' uses a stack to keep track of 
+the digits, easily converts int values into binary numbers. 
+
+It assumes we start with an int greater than 0. A simple iteration
+then continually divides the decimal number by 2 and keeps track
+of the remainder. 
+The first division gives info as to whether the value is even or odd. 
+An even value will have remainder 0.
+
+convert 232 to binary:
+
+233 / 2 = 116, rem = 1
+116 / 2 = 58, rem = 0
+58 / 2 = 29, rem = 0
+29 / 2 = 14, rem = 1 
+14 / 2 = 7, rem = 0
+7 / 2 = 3, rem = 1
+3 / 2 = 1, rem = 1, 
+1 / 2 = 0, rem = 1
+
+= 10010111
+
+
+

@@ -1,0 +1,21 @@
+package code.interview.general;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Run 
+{
+	Array array;
+	
+	private void createArray()
+	{
+		ArrayList<Integer> ls =  new ArrayList<Integer>(Arrays.asList(0, 0, 1, 2, 3, 4, 0));
+	}
+	
+	public static void main(String[] args)
+	{
+		ArrayList
+		Array array = new Array()
+	}
+
+}

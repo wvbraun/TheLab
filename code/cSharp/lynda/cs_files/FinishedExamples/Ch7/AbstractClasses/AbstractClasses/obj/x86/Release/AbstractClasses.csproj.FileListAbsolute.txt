@@ -1,0 +1,5 @@
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch7\AbstractClasses\AbstractClasses\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch7\AbstractClasses\AbstractClasses\bin\Release\AbstractClasses.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch7\AbstractClasses\AbstractClasses\bin\Release\AbstractClasses.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch7\AbstractClasses\AbstractClasses\obj\x86\Release\AbstractClasses.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch7\AbstractClasses\AbstractClasses\obj\x86\Release\AbstractClasses.pdb

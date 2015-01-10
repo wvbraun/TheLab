@@ -1,0 +1,15 @@
+REPL - 
+	
+	Stands for read-eval-print loop. 
+
+To start a REPL, enter 'lein repl' at command prompt. This will display 'user=>'. The part
+before '=>' indicates the current namespace.
+
+Ex:
+
+user=> (def n 2)
+#'user/n
+user=> (* n 3)
+6
+
+

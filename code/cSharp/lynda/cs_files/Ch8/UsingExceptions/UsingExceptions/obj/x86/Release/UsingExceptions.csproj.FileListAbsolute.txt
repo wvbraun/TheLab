@@ -1,0 +1,5 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingExceptions\bin\Release\UsingExceptions.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingExceptions\bin\Release\UsingExceptions.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingExceptions\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingExceptions\obj\x86\Release\UsingExceptions.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingExceptions\obj\x86\Release\UsingExceptions.pdb

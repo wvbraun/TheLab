@@ -1,0 +1,10 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\GarbageCollection\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\GarbageCollection\bin\Release\GarbageCollection.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\GarbageCollection\bin\Release\GarbageCollection.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\GarbageCollection\obj\x86\Release\GarbageCollection.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\GarbageCollection\obj\x86\Release\GarbageCollection.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch11\GarbageCollection\GarbageCollection\bin\Release\GarbageCollection.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch11\GarbageCollection\GarbageCollection\bin\Release\GarbageCollection.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch11\GarbageCollection\GarbageCollection\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch11\GarbageCollection\GarbageCollection\obj\x86\Release\GarbageCollection.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch11\GarbageCollection\GarbageCollection\obj\x86\Release\GarbageCollection.pdb

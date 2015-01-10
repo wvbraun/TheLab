@@ -1,0 +1,5 @@
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\DefiningProperties\DefiningProperties\bin\Release\DefiningProperties.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\DefiningProperties\DefiningProperties\bin\Release\DefiningProperties.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\DefiningProperties\DefiningProperties\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\DefiningProperties\DefiningProperties\obj\x86\Release\DefiningProperties.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\DefiningProperties\DefiningProperties\obj\x86\Release\DefiningProperties.pdb

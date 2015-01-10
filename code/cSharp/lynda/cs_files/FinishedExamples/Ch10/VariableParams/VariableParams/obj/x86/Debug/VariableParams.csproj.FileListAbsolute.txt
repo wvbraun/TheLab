@@ -1,0 +1,9 @@
+C:\Users\joemarin\AppData\Local\Temporary Projects\VariableParams\bin\Debug\VariableParams.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\VariableParams\bin\Debug\VariableParams.pdb
+C:\Users\joemarin\AppData\Local\Temporary Projects\VariableParams\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarin\AppData\Local\Temporary Projects\VariableParams\obj\x86\Debug\VariableParams.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\VariableParams\obj\x86\Debug\VariableParams.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch10\VariableParams\VariableParams\obj\x86\Debug\VariableParams.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch10\VariableParams\VariableParams\obj\x86\Debug\VariableParams.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch10\VariableParams\VariableParams\obj\x86\Debug\VariableParams.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch10\VariableParams\VariableParams\obj\x86\Debug\VariableParams.pdb

@@ -1,0 +1,13 @@
+C:\Users\joemarin\AppData\Local\Temporary Projects\ConstAndEnums\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\ConstAndEnums\ConstAndEnums\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\ConstAndEnums\ConstAndEnums\bin\Debug\ConstAndEnums.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\ConstAndEnums\ConstAndEnums\bin\Debug\ConstAndEnums.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\ConstAndEnums\ConstAndEnums\obj\x86\Debug\ConstAndEnums.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\ConstAndEnums\ConstAndEnums\obj\x86\Debug\ConstAndEnums.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\FinishedExamples\Ch3\ConstAndEnums\ConstAndEnums\obj\x86\Debug\ConstAndEnums.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\FinishedExamples\Ch3\ConstAndEnums\ConstAndEnums\obj\x86\Debug\ConstAndEnums.pdb
+C:\Users\ssimpson\Desktop\ConstAndEnums\ConstAndEnums\obj\x86\Debug\ConstAndEnums.exe
+C:\Users\ssimpson\Desktop\ConstAndEnums\ConstAndEnums\obj\x86\Debug\ConstAndEnums.pdb
+C:\Users\ssimpson\Desktop\ConstAndEnums\ConstAndEnums\bin\Debug\ConstAndEnums.exe
+C:\Users\ssimpson\Desktop\ConstAndEnums\ConstAndEnums\bin\Debug\ConstAndEnums.pdb
+C:\Users\ssimpson\Desktop\ConstAndEnums\ConstAndEnums\obj\x86\Debug\ResolveAssemblyReference.cache

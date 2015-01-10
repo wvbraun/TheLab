@@ -1,0 +1,9 @@
+A list comprehension provides a compact way of mapping a list
+into another list by applying a function to each of the elements 
+of the list. 
+
+>>> a_list = [1, 9, 8, 4]
+>>> [elem * 2 for elem in a_list] [2, 18, 16, 8]
+>>> a_list [1, 9, 8, 4]
+>>> a_list = [elem * 2 for elem in a_list]
+>>> a_list [2, 18, 16, 8]

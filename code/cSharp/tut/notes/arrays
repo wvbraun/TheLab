@@ -1,0 +1,21 @@
+Arrays work as collections of items. You can use them to 
+gather items in a single group, and perfrom various operations 
+on them. 
+
+Arrays are declared like:
+
+	string[] names;
+	int[] nums;
+
+You need to instantiate the array to use it:
+
+	string[] names = new string[2];
+
+	The number (2) is the size of the array.
+
+Putting items into the array is done like:
+
+	names[0] = "John";
+
+
+

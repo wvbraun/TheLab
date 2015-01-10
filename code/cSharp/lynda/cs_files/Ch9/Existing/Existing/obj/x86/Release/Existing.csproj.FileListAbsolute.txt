@@ -1,0 +1,10 @@
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch9\Existing\Existing\bin\Release\Existing.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch9\Existing\Existing\bin\Release\Existing.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch9\Existing\Existing\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch9\Existing\Existing\obj\x86\Release\Existing.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch9\Existing\Existing\obj\x86\Release\Existing.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\Existing\Existing\bin\Release\Existing.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\Existing\Existing\bin\Release\Existing.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\Existing\Existing\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\Existing\Existing\obj\x86\Release\Existing.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch9\Existing\Existing\obj\x86\Release\Existing.pdb

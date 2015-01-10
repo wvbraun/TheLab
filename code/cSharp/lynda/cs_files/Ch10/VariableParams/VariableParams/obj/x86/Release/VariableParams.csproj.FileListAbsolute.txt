@@ -1,0 +1,5 @@
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\VariableParams\VariableParams\bin\Release\VariableParams.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\VariableParams\VariableParams\bin\Release\VariableParams.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\VariableParams\VariableParams\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\VariableParams\VariableParams\obj\x86\Release\VariableParams.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch10\VariableParams\VariableParams\obj\x86\Release\VariableParams.pdb

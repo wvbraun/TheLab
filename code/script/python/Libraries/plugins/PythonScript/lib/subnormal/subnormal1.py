@@ -1,0 +1,1 @@
+def msg():	print "hello from subfunny1"	

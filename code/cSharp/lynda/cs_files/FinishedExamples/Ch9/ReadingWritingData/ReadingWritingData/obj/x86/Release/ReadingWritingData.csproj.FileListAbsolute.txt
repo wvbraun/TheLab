@@ -1,0 +1,5 @@
+C:\Users\Joe Marini\Desktop\Exercise Files\FinishedExamples\Ch9\ReadingWritingData\ReadingWritingData\bin\Release\ReadingWritingData.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\FinishedExamples\Ch9\ReadingWritingData\ReadingWritingData\bin\Release\ReadingWritingData.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\FinishedExamples\Ch9\ReadingWritingData\ReadingWritingData\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\FinishedExamples\Ch9\ReadingWritingData\ReadingWritingData\obj\x86\Release\ReadingWritingData.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\FinishedExamples\Ch9\ReadingWritingData\ReadingWritingData\obj\x86\Release\ReadingWritingData.pdb

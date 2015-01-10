@@ -1,0 +1,11 @@
+Binary Search Algorithm
+
+Looking for an element x inside an array M, which contains n 
+elements. The algo assumes M is sorted in ascending order:
+
+1. Set low to 0, high to n -1. 
+2. If low > high, x does not exist in M and the algo terminates. 
+3. Set mid to (low + high ) / 2
+4. If M[mid] < x, set low to mid + 1 and go to step 2. 
+5. If M[mid] > x, set high to mid -1 and go to step 2. 
+6. M[mid] == x and the algo terminates. 

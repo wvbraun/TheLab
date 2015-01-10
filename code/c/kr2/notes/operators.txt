@@ -1,0 +1,112 @@
+Relational and Logical Operators:
+
+relational operators:
+> , >= , < , <= 
+
+equality operators:
+== , != 
+
+logical operators:
+&& , || 
+
+------------------------------------------------------------------------
+
+Bitwise Operators:
+Can only be applied to char, short, int, and long. 
+
+&  -> bitwise AND
+|  -> bitwise inclusive OR
+^  -> bitwise exclusive XOR
+<< -> left shift 
+>> -> right shift
+~ -> one's complement (unary)
+
+----
+
+& AND:
+
+bit a   | bit b | a & b (a AND b)
+0       | 0     | 0 
+0	| 1	| 0
+1	| 0	| 0	
+1	| 1	| 1
+
+ex: 11001110
+  & 10011000
+  = 10001000
+
+------
+| OR:
+
+a , b , a | b (a or b) 
+0 , 0 , 0 
+0 , 1 , 1 
+1 , 0 , 1 
+1 , 1 , 1
+
+ex: 11001110
+  | 10011000
+  = 11011110
+
+-----
+^ XOR:
+
+a | b | a ^ b (a XOR b)
+0 | 0 | 0
+0 | 1 | 1
+1 | 0 | 1
+1 | 1 | 0
+
+The bitwise XOR (exclusive or) peforms a logical XOR function; adding the two bits discarding the cary. 
+Thus, the result is zero only when we have 2 zeros or 2 ones to perform.  
+	
+
+----
+~ bitwise NOT / ones complement:
+
+a | ~a (compliment of a)
+0 | 1
+1 | 0 
+
+The one's complement gets us the complement of a given number. Thus, invertered bits. 
+
+---
+>> right shift:
+
+The right shift operator requires two operands. It shifts each bit in its left operand to the right. The number following the operator decides the number of places the bits are shifted. 
+Thus by doing ch >> 3, all the bits will be shifted to the right by three places. 
+
+ex: 
+ch = 11100101;
+ch >> 1 = 01110010
+ch >> 2 = 00111001
+
+right shift can be used to divide a bit pattern by 2
+ex:
+i = 14; // Bit pattern 1110
+j = i >> 1; // bit pattern shifted by 1, thus 111 = 7 which is 14/2
+
+----
+<< left shift:
+
+The left shit operator shifts each bit in its left operand to the left. It works opposite to right shift operator.
+ 
+ex:
+ch = 11100101;
+ch << 1 = 11001010
+ch << 2 = 10010100
+
+left shift can be used to multiply an int in multiples of 2
+ex:
+int i = 4; // bit pattern 100
+int j = i << 1 ; //  bit pattern 1000 which is 8 
+int j = i << 2 ; // bit pattern 10000 which is 16, 4 * 4
+-----------------------------------------------------------------------
+
+Bitwise Assignment Operators:
+
+&=  -> bitwsie AND assignment 
+|=  -> bitwise OR assignment 
+^=  -> bitwise XOR assignment 
+<<= -> left shift assingment 
+>>= -> right shift assignment 

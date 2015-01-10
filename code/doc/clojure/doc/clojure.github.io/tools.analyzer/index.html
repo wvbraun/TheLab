@@ -1,0 +1,894 @@
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>clojure.tools.analyzer - Analyzer for Clojure code 0.0.1 API documentation</title>
+    <link href="static/favicon.png" rel="icon" />
+    <link href="static/favicon.png" rel="shortcut icon" />
+    <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/wiki.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/internal.css" rel="stylesheet" />
+    <style>.menuWrapper{height: 36px;}</style>
+  </head>
+<!--
+This document was auto-generated from the source by the clojure autodoc system.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+-->
+  <body>
+    <div id="AllContentContainer">
+      <div id="Header">
+	<a id="Logo" href="index.html"><img alt="Clojure" height="100" width="100" src="static/clojure-icon.gif" /></a>
+	<h1><a title="page header title" id="page-header" href="index.html">tools.analyzer API Reference</a></h1>
+      </div>
+      <div id="leftcolumn"><div style="text-align: center;"></div>
+<div class="menu">
+  <div class="WikiCustomNav WikiElement wiki">
+    <span class="toc-header"><span id="project-name">Analyzer for Clojure code</span> <span id="version">0.0.1</span> API</span><br />
+    <ul>
+      <li><a class="wiki_link" href="index.html">Overview</a></li>
+      <li><a class="wiki_link" href="api-index.html">API Index</a></li>
+    </ul>
+    
+    
+    <a href="http://clojure.org" class="wiki_link">Clojure Home</a>
+  </div>
+</div>
+</div>
+      <div id="rightcolumn">
+	<div id="Content">
+	  <div class="contentBox"><div class="innerContentBox">
+              <div id="content_view" class="wiki wikiPage">
+                <div id="right-sidebar"><div id="toc">
+  <h1 class="nopad">Table of Contents</h1>
+  <div style="margin-left: 1em;" class="toc-section">
+    <a href="#toc0" style="margin-top: 3px;">Overview</a>
+    
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#" style="margin-top: 3px;"></a>
+    
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#" style="margin-top: 3px;"></a>
+    
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#var-section" style="margin-top: 3px;">Vars and Functions</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer/-parse">-parse</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer/analyze">analyze</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer/analyze-in-env">analyze-in-env</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer/create-var">create-var</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer/empty-env">empty-env</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer/macroexpand">macroexpand</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer/macroexpand-1">macroexpand-1</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer/parse">parse</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer/specials">specials</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer/var?">var?</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.ast" style="margin-top: 3px;">clojure.tools.analyzer.ast</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast/ast-&gt;eav">ast-&gt;eav</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast/children">children</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast/children*">children*</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast/cycling">cycling</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast/nodes">nodes</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast/postwalk">postwalk</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast/prewalk">prewalk</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast/update-children">update-children</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast/walk">walk</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.ast.query" style="margin-top: 3px;">clojure.tools.analyzer.ast.query</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast.query/db">db</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast.query/q">q</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast.query/query-map">query-map</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast.query/resolve-calls">resolve-calls</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.ast.query/unfold-expression-clauses">unfold-expression-clauses</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.passes.add-binding-atom" style="margin-top: 3px;">clojure.tools.analyzer.passes.add-binding-atom</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.passes.add-binding-atom/add-binding-atom">add-binding-atom</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.passes.collect" style="margin-top: 3px;">clojure.tools.analyzer.passes.collect</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.passes.collect/collect">collect</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.passes.constant-lifter" style="margin-top: 3px;">clojure.tools.analyzer.passes.constant-lifter</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.passes.constant-lifter/constant-lift">constant-lift</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.passes.elide-meta" style="margin-top: 3px;">clojure.tools.analyzer.passes.elide-meta</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.passes.elide-meta/elide-meta">elide-meta</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.passes.elide-meta/elides">elides</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.passes.emit-form" style="margin-top: 3px;">clojure.tools.analyzer.passes.emit-form</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.passes.emit-form/emit-form">emit-form</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.passes.emit-form/emit-hygienic-form">emit-hygienic-form</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.passes.index-vector-nodes" style="margin-top: 3px;">clojure.tools.analyzer.passes.index-vector-nodes</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.passes.index-vector-nodes/index-vector-nodes">index-vector-nodes</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.passes.source-info" style="margin-top: 3px;">clojure.tools.analyzer.passes.source-info</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.passes.source-info/source-info">source-info</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.passes.uniquify" style="margin-top: 3px;">clojure.tools.analyzer.passes.uniquify</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.passes.uniquify/uniquify-locals">uniquify-locals</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.passes.warn-earmuff" style="margin-top: 3px;">clojure.tools.analyzer.passes.warn-earmuff</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.passes.warn-earmuff/warn-earmuff">warn-earmuff</a>
+      
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#clojure.tools.analyzer.utils" style="margin-top: 3px;">clojure.tools.analyzer.utils</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.utils/classify">classify</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.utils/ctx">ctx</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.analyzer.utils/update!">update!</a>
+      
+    </div>
+  </div>
+</div>
+</div>
+                <div id="content-tag"><h1 id="overview">API for <span id="clojure.tools.analyzer">clojure.tools.analyzer</span>
+  - <span id="header-project">Analyzer for Clojure code</span> <span id="header-version">0.0.1</span><span id="header-status-block"> (<span id="header-status">in development</span>)</span>
+  </h1>
+
+<br />Full namespace name: <span id="long-name">clojure.tools.analyzer</span>
+<p></p>
+<h2>Overview</h2>
+<div id="home-page">Project home page is <a href="http://github.com/clojure/tools.analyzer/">http://github.com/clojure/tools.analyzer/</a></div>
+<pre id="namespace-docstr">Analyzer for clojure code, host agnostic.
+
+Entry point:
+* analyze
+
+Platform implementers must provide dynamic bindings for:
+* macroexpand-1
+* parse
+* create-var
+* var?
+
+See clojure.tools.analyzer.core-test for an example on how to setup the analyzer.</pre>
+
+
+<br />
+
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer/-parse">-parse</h2>
+    <span id="var-type">multimethod</span><br />
+    <pre id="var-usage">No usage documentation available</pre>
+    <pre id="var-docstr">Takes a form and an env map and dispatches on the head of the form, a special
+form.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/7f13ef3f932a38c26472d1a363f4d003f8126df7/src/main/clojure/clojure/tools/analyzer.clj#L26" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer/analyze">analyze</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (analyze form {:keys [context], :as env})
+</pre>
+    <pre id="var-docstr">Given a form to analyze and an environment, a map containing:
+* :locals     a map from binding symbol to AST of the binding value
+* :context    a keyword describing the form's context, one of:
+ ** :return     the form is in return position
+ ** :statement  the return value of the form is not needed
+ ** :expr       everything else
+* :ns         a symbol representing the current namespace of the form to be
+              analyzed, must be present in the :namespaces map
+* :namespaces an atom containing a map from namespace symbol to namespace map,
+              the namespace map contains the following keys:
+ ** :mappings   a map of mappings of the namespace, symbol to var
+ ** :aliases    a map of the aliases of the namespace, symbol to symbol
+ ** :ns         a symbol representing the namespace
+returns an AST for that form.
+
+The AST is a map that is *guaranteed* to have the following keys:
+* :op   a keyword describing the AST node
+* :form the form represented by the AST node
+* :env  the environment map of the AST node
+
+Additionaly if the AST node contains sub-nodes, it is guaranteed to have:
+* :children a vector of the keys of the AST node mapping to the sub-nodes</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/7f13ef3f932a38c26472d1a363f4d003f8126df7/src/main/clojure/clojure/tools/analyzer.clj#L31" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer/analyze-in-env">analyze-in-env</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (analyze-in-env env)
+</pre>
+    <pre id="var-docstr">Takes an env map and returns a function that analyzes a form in that env</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/7f13ef3f932a38c26472d1a363f4d003f8126df7/src/main/clojure/clojure/tools/analyzer.clj#L84" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer/create-var">create-var</h2>
+    <span id="var-type">dynamic function</span><br />
+    <pre id="var-usage">Usage: (create-var sym env)
+</pre>
+    <pre id="var-docstr">Creates a var for sym and returns it</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/7f13ef3f932a38c26472d1a363f4d003f8126df7/src/main/clojure/clojure/tools/analyzer.clj#L100" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer/empty-env">empty-env</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (empty-env)
+</pre>
+    <pre id="var-docstr">Returns an empty env</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/7f13ef3f932a38c26472d1a363f4d003f8126df7/src/main/clojure/clojure/tools/analyzer.clj#L73" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer/macroexpand">macroexpand</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (macroexpand form env)
+</pre>
+    <pre id="var-docstr">Repeatedly calls macroexpand-1 on form until it no longer
+represents a macro form, then returns it.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/7f13ef3f932a38c26472d1a363f4d003f8126df7/src/main/clojure/clojure/tools/analyzer.clj#L179" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer/macroexpand-1">macroexpand-1</h2>
+    <span id="var-type">dynamic function</span><br />
+    <pre id="var-usage">Usage: (macroexpand-1 form env)
+</pre>
+    <pre id="var-docstr">If form represents a macro form, returns its expansion,
+else returns form.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/7f13ef3f932a38c26472d1a363f4d003f8126df7/src/main/clojure/clojure/tools/analyzer.clj#L89" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer/parse">parse</h2>
+    <span id="var-type">dynamic function</span><br />
+    <pre id="var-usage">Usage: (parse [op &amp; args] env)
+</pre>
+    <pre id="var-docstr">Multimethod that dispatches on op, should default to -parse</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/7f13ef3f932a38c26472d1a363f4d003f8126df7/src/main/clojure/clojure/tools/analyzer.clj#L95" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer/specials">specials</h2>
+    <span id="var-type">var</span><br />
+    <pre id="var-usage"></pre>
+    <pre id="var-docstr">Set of special forms common to every clojure variant</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/7f13ef3f932a38c26472d1a363f4d003f8126df7/src/main/clojure/clojure/tools/analyzer.clj#L173" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer/var?">var?</h2>
+    <span id="var-type">dynamic function</span><br />
+    <pre id="var-usage">Usage: (var? obj)
+</pre>
+    <pre id="var-docstr">Returns true if obj represent a var form as returned by create-var</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/7f13ef3f932a38c26472d1a363f4d003f8126df7/src/main/clojure/clojure/tools/analyzer.clj#L105" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.ast">clojure.tools.analyzer.ast</h2>
+<pre id="namespace-docstr">Utilities for AST walking/updating</pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast/ast-&gt;eav">ast-&gt;eav</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (ast-&gt;eav ast)
+</pre>
+    <pre id="var-docstr">Returns an EAV representation of the current AST that can be used by
+Datomic's Datalog.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/651c1899519de94c748063adaa9a1bffb133e487/src/main/clojure/clojure/tools/analyzer/ast.clj#L84" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast/children">children</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (children ast)
+</pre>
+    <pre id="var-docstr">Return a vector of the children expression of the AST node, if it has any.
+The children expressions are kept in order and flattened so that the returning
+vector contains only nodes and not vectors of nodes.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/651c1899519de94c748063adaa9a1bffb133e487/src/main/clojure/clojure/tools/analyzer/ast.clj#L32" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast/children*">children*</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (children* {:keys [children], :as ast})
+</pre>
+    <pre id="var-docstr">Return a vector of the children expression of the AST node, if it has any.
+The returned vector returns the childrens in the order as they appear in the
+:children field of the AST, and may be either a node or a vector of nodes.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/651c1899519de94c748063adaa9a1bffb133e487/src/main/clojure/clojure/tools/analyzer/ast.clj#L24" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast/cycling">cycling</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (cycling &amp; fns*)
+</pre>
+    <pre id="var-docstr">Combine the given passes in a single pass that will be repeatedly
+applied to the AST until applying it another time will have no effect</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/651c1899519de94c748063adaa9a1bffb133e487/src/main/clojure/clojure/tools/analyzer/ast.clj#L12" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast/nodes">nodes</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (nodes ast)
+</pre>
+    <pre id="var-docstr">Returns a lazy-seq of all the nodes in the given AST, in depth-first pre-order.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/651c1899519de94c748063adaa9a1bffb133e487/src/main/clojure/clojure/tools/analyzer/ast.clj#L78" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast/postwalk">postwalk</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (postwalk ast f)
+       (postwalk ast f reversed?)
+</pre>
+    <pre id="var-docstr">Shorthand for (walk ast identity f reversed?)</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/651c1899519de94c748063adaa9a1bffb133e487/src/main/clojure/clojure/tools/analyzer/ast.clj#L71" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast/prewalk">prewalk</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (prewalk ast f)
+</pre>
+    <pre id="var-docstr">Shorthand for (walk ast f identity)</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/651c1899519de94c748063adaa9a1bffb133e487/src/main/clojure/clojure/tools/analyzer/ast.clj#L66" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast/update-children">update-children</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (update-children ast f)
+       (update-children ast f fix)
+</pre>
+    <pre id="var-docstr">Applies `f` to the nodes in the AST nodes children.
+Optionally applies `fix` to the children before applying `f` to the
+children nodes and then applies `fix` to the update children.
+An example of a useful `fix` function is `rseq`.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/651c1899519de94c748063adaa9a1bffb133e487/src/main/clojure/clojure/tools/analyzer/ast.clj#L40" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast/walk">walk</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (walk ast pre post)
+       (walk ast pre post reversed?)
+</pre>
+    <pre id="var-docstr">Walk the ast applying pre when entering the nodes, and post when exiting.
+If reversed? is not-nil, pre and post will be applied starting from the last
+children of the AST node to the first one.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/651c1899519de94c748063adaa9a1bffb133e487/src/main/clojure/clojure/tools/analyzer/ast.clj#L55" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.ast.query">clojure.tools.analyzer.ast.query</h2>
+<pre id="namespace-docstr">Utilities for querying tools.analyzer ASTs with Datomic</pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast.query/db">db</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (db asts)
+</pre>
+    <pre id="var-docstr">Given a list of ASTs, returns a representation of those
+that can be used as a database in a Datomic Datalog query</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/87bc3a0a8faff84362e2cbd43e20774e869343fb/src/main/clojure/clojure/tools/analyzer/ast/query.clj#L77" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast.query/q">q</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (q query asts &amp; inputs)
+</pre>
+    <pre id="var-docstr">Execute a Datomic Datalog query against the ASTs.
+The first input is always assumed to be an AST database, if more
+are required, it's required to call `db` on them.
+`unfold-expression-clauses` is automatically applied to the
+query.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/87bc3a0a8faff84362e2cbd43e20774e869343fb/src/main/clojure/clojure/tools/analyzer/ast/query.clj#L83" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast.query/query-map">query-map</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (query-map query)
+</pre>
+    <pre id="var-docstr">Transoforms a Datomic query from its vector representation to its map one.
+If the given query is already in its map representation, the original query
+is returned.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/87bc3a0a8faff84362e2cbd43e20774e869343fb/src/main/clojure/clojure/tools/analyzer/ast/query.clj#L14" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast.query/resolve-calls">resolve-calls</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (resolve-calls query)
+</pre>
+    <pre id="var-docstr">Automatically replace fn name symbols in expression clauses with
+their namespace qualified one if the symbol can be resolved in the
+current namespace.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/87bc3a0a8faff84362e2cbd43e20774e869343fb/src/main/clojure/clojure/tools/analyzer/ast/query.clj#L59" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.ast.query/unfold-expression-clauses">unfold-expression-clauses</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (unfold-expression-clauses query)
+</pre>
+    <pre id="var-docstr">Given a Datomic query, walk the :where clauses searching for
+expression clauses with nested calls, unnesting those calls.
+
+E.g {:where [[(inc (dec ?foo)) ?bar] ..] ..} will be transformed in
+{:where [[(dec ?foo) ?1234] [(inc ?1234) ?bar] ..] ..}</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/87bc3a0a8faff84362e2cbd43e20774e869343fb/src/main/clojure/clojure/tools/analyzer/ast/query.clj#L29" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.passes.add-binding-atom">clojure.tools.analyzer.passes.add-binding-atom</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.passes.add-binding-atom/add-binding-atom">add-binding-atom</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (add-binding-atom ast)
+</pre>
+    <pre id="var-docstr">Walks the AST and adds an atom-backed-map to every local binding,
+the same atom will be shared between all occurences of that local.
+
+The atom is put in the :atom field of the node.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/e75ad977e8883ebb99d3c4992134ab0d4c4c17c3/src/main/clojure/clojure/tools/analyzer/passes/add_binding_atom.clj#L30" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.passes.collect">clojure.tools.analyzer.passes.collect</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.passes.collect/collect">collect</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (collect {:keys [what top-level?], :as opts})
+</pre>
+    <pre id="var-docstr">Takes a map with:
+* :what        set of keywords describing what to collect, some of:
+  ** :constants     constant expressions
+  ** :closed-overs  closed over local bindings
+  ** :callsites     keyword and protocol callsites
+* :where       set of :op nodes where to attach collected info
+* :top-level?  if true attach collected info to the top-level node</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/55c2b32287511a0178e5fe67855368a6ec68505a/src/main/clojure/clojure/tools/analyzer/passes/collect.clj#L134" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.passes.constant-lifter">clojure.tools.analyzer.passes.constant-lifter</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.passes.constant-lifter/constant-lift">constant-lift</h2>
+    <span id="var-type">multimethod</span><br />
+    <pre id="var-usage">No usage documentation available</pre>
+    <pre id="var-docstr">If op is :vector/:set/:map, and every item of the collection is a literal
+and the collection ha no metadata or if op is :var and the var has :const
+metadata, transform the node to an equivalent :const node.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/d2c9a64f7c546b287d521efc405d6b53c78a6212/src/main/clojure/clojure/tools/analyzer/passes/constant_lifter.clj#L13" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.passes.elide-meta">clojure.tools.analyzer.passes.elide-meta</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.passes.elide-meta/elide-meta">elide-meta</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (elide-meta ast)
+</pre>
+    <pre id="var-docstr">If elides is not empty and the AST node contains metadata,
+dissoc all the keys in elides from the metadata.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/0cf008c5ac5a343c58813d0c9f6b7951ef9347d1/src/main/clojure/clojure/tools/analyzer/passes/elide_meta.clj#L52" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.passes.elide-meta/elides">elides</h2>
+    <span id="var-type">dynamic var</span><br />
+    <pre id="var-usage"></pre>
+    <pre id="var-docstr">Set of map keys to elide from metadata.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/0cf008c5ac5a343c58813d0c9f6b7951ef9347d1/src/main/clojure/clojure/tools/analyzer/passes/elide_meta.clj#L11" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.passes.emit-form">clojure.tools.analyzer.passes.emit-form</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.passes.emit-form/emit-form">emit-form</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (emit-form ast)
+</pre>
+    <pre id="var-docstr">Return the form represented by the given AST</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/cc7213301553ea58253ea5c57b0f6239f8d7256f/src/main/clojure/clojure/tools/analyzer/passes/emit_form.clj#L15" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.passes.emit-form/emit-hygienic-form">emit-hygienic-form</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (emit-hygienic-form ast)
+</pre>
+    <pre id="var-docstr">Return an hygienic form represented by the given AST</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/cc7213301553ea58253ea5c57b0f6239f8d7256f/src/main/clojure/clojure/tools/analyzer/passes/emit_form.clj#L20" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.passes.index-vector-nodes">clojure.tools.analyzer.passes.index-vector-nodes</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.passes.index-vector-nodes/index-vector-nodes">index-vector-nodes</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (index-vector-nodes {:keys [children], :as ast})
+</pre>
+    <pre id="var-docstr">Adds an :idx attribute to nodes in vector children, representing the position
+of the node vector.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/d7bd68f6e01a7b241c0133cdca592ec1ab25949e/src/main/clojure/clojure/tools/analyzer/passes/index_vector_nodes.clj#L11" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.passes.source-info">clojure.tools.analyzer.passes.source-info</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.passes.source-info/source-info">source-info</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (source-info {:keys [form env], :as ast})
+</pre>
+    <pre id="var-docstr">Adds (when possible) :line, :column and :file info to the AST :env</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/0cf008c5ac5a343c58813d0c9f6b7951ef9347d1/src/main/clojure/clojure/tools/analyzer/passes/source_info.clj#L12" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.passes.uniquify">clojure.tools.analyzer.passes.uniquify</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.passes.uniquify/uniquify-locals">uniquify-locals</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (uniquify-locals ast)
+</pre>
+    <pre id="var-docstr">Walks the AST performing alpha-conversion on local
+bindings' :name field</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/b06fd1a17c1e8b0b0fbb108aeb63fa0623bddfbe/src/main/clojure/clojure/tools/analyzer/passes/uniquify.clj#L81" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.passes.warn-earmuff">clojure.tools.analyzer.passes.warn-earmuff</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.passes.warn-earmuff/warn-earmuff">warn-earmuff</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (warn-earmuff {:keys [op name var], :as ast})
+</pre>
+    <pre id="var-docstr">Prints a warning to *err* if the AST node is a :def node and the
+var name contains earmuffs but the var is not marked dynamic</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/2cfa02ed7fe23f36c373c9ff0fa5eb8d77b48038/src/main/clojure/clojure/tools/analyzer/passes/warn_earmuff.clj#L12" id="var-source">Source</a>
+  </div>
+</div>
+<br />
+<h2 id="clojure.tools.analyzer.utils">clojure.tools.analyzer.utils</h2>
+<pre id="namespace-docstr"></pre>
+
+
+<br />
+
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.utils/classify">classify</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (classify form)
+</pre>
+    <pre id="var-docstr">Returns a keyword describing the form type</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/77b27eb91fb603ede9f12cd08271c198768c737f/src/main/clojure/clojure/tools/analyzer/utils.clj#L37" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.utils/ctx">ctx</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (ctx env ctx)
+</pre>
+    <pre id="var-docstr">Returns a copy of the passed environment with :context set to ctx</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/77b27eb91fb603ede9f12cd08271c198768c737f/src/main/clojure/clojure/tools/analyzer/utils.clj#L19" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.analyzer.utils/update!">update!</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (update! target f &amp; args)
+</pre>
+    <pre id="var-docstr">Shortrand for (set! x (f x a0 .. an))</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.analyzer/blob/77b27eb91fb603ede9f12cd08271c198768c737f/src/main/clojure/clojure/tools/analyzer/utils.clj#L14" id="var-source">Source</a>
+  </div>
+</div>
+
+
+</div>
+              </div>
+            </div>
+          </div>
+	</div>
+	<div id="foot">
+	  <div style="text-align: center;" id="copyright">Copyright 2007-2013 by Rich Hickey and the various contributors</div>
+	</div>
+      </div>
+      <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />
+      Clojure auto-documentation system by Tom Faulhaber.</div>
+    </div>
+    <!-- /AllContentContainer -->
+  </body>
+
+</html>

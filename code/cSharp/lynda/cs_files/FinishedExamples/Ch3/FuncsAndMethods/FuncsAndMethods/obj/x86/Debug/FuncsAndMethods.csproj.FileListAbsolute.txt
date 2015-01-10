@@ -1,0 +1,7 @@
+C:\Users\joemarin\AppData\Local\Temporary Projects\FuncsAndMethods\bin\Debug\FuncsAndMethods.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\FuncsAndMethods\bin\Debug\FuncsAndMethods.pdb
+C:\Users\joemarin\AppData\Local\Temporary Projects\FuncsAndMethods\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarin\AppData\Local\Temporary Projects\FuncsAndMethods\obj\x86\Debug\FuncsAndMethods.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\FuncsAndMethods\obj\x86\Debug\FuncsAndMethods.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\FuncsAndMethods\FuncsAndMethods\obj\x86\Debug\FuncsAndMethods.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\FuncsAndMethods\FuncsAndMethods\obj\x86\Debug\FuncsAndMethods.pdb

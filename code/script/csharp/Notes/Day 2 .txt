@@ -1,0 +1,206 @@
+Day 2:
+
+One Line Comments:
+	ex: // comment text
+	
+Multiline Comments:
+	ex /* this is a comment */
+	- To start use: /*
+	- To end use: */
+	ex: /* This is 
+		a comment. 
+		*/
+		
+Documentation Comments:
+	- Identified with three slashes (///)
+	- Enable you to create external documentation automatically 
+	
+To get XML documentation:
+	add the /doc parameter when you compile at command line:
+	ex: csc /doc:xmlfile Xmlapp.cs
+	
+Key Parts of C# language:
+	- Whitespace
+		. The complier almost always ignores whitespace. 
+			ex: int radius = 4;
+			ex: int     radius     =     4     ;
+			ex: int
+				raidus
+				=
+				4
+				;
+		Are all the same thing.
+		. The exception to this is text within quotation marks. 
+	- c# keywords
+		. abstract as base bool break
+		. byte case catch char checked
+		. class const continue decimal default
+		. delegate do double else enum
+		. event explicit extern false finally
+		. fixed float for foreach goto
+		. if implicit in int interface
+		. internal is lock long namespace
+		. new null object operator out
+		. override params private protected public
+		. readonly ref return sbyte sealed
+		. short sizeof stackalloc static string
+		. struct switch this throw true
+		. try typeof uint ulong unchecked
+		. unsafe ushort using virtual void
+	- literals:
+		. Literals are straightforward hard-coded values. 
+		ex: 4 and 3.14159 are both literals
+	- identifiers 
+		. Words taht are not keywords or literals. 
+		
+		
+Expressions:
+	- are like phrases. 
+	ex: PI = 3.14159
+	ex: PI * radius * radius 
+	
+Statements: 
+	- are like sentences. 
+	- Empty statements: semicolon on line with nothing else
+
+VARIABLES:
+
+Naming Variables:
+	- The name can contain letters, digits, and underscores. 
+	- The first character of name must be a latter, an underscore can also be use. 
+	- Case matters. 
+	- C# keywords cannot be used as variable names. 
+	
+Using Variables:
+	
+	Declaring a Variable:
+		typename varname; 
+		
+		typename = the variable type
+		varname = the name of the variable 
+		
+		.To delcare a variable that can hold an integer:
+			int my_number;
+			
+		.You can also declare multiple variables on the same line with commas:
+			ex: int count, number, start;
+			
+		Assigning Values to Variables:
+			varname = value;
+			
+			ex: my_variable = 5;
+			
+			. You can declare after variable has been declared or at the same time. 
+			
+			ex: int my_variable = 5;
+			
+			. Variables value can be changed:
+				ex: my_variable = 1010;
+			
+C# DATA TYPES:
+
+* you must include extra info for complier sometimes, this info is referred to 
+* as a 'flag'. you need to add /unsafe flag.
+* ex: csc /unsafe blah.cs
+
+Numeric Variable Types:
+	. Integral 
+		- Integers(int and uint) 
+			. stores an signed number represented by 4 or 32 bytes. 
+			. any 'signed' number between (+ or - 2,147,483,687)
+			. if you want an int to be higher you can make it unsigned.
+			. You can use uint to make number unsigned. 
+			. You can not use decimals. 
+		- Shorts(short and ushort)
+			. It is only 2 bytes. 
+			. use short for pos and neg numbers. 
+			. use short if all pos. 
+			. values for short are (+ or - 32,768)
+			. values for ushort are(0 to 65,535)
+		- Longs(long and ulong)
+			. More than int and uint. 
+			. long can store (+- 9,223,372,036, 854, 775, 808)
+			. ulong can store (0 to 18,446,744,073,709,551,615)
+		- Bytes(byte and sbyte)
+			. When needs are really small, use byte.
+			. sbyte can store (-128 to 127)
+			. byte can store ( 0 to 255)
+		- Character(char)
+			. Letters or extended characters. 
+			. also $, %, *
+			. all chars are stored as numbers. 
+			
+		- Extended characters:
+			. \b - backspace 
+			. \n - newline
+			. \t - horizontal tab
+			. \\ - backslash
+			. \' - single quote
+			. \" - double quote
+	. Floating Point
+		- float 
+			. a data type for storing numbers with decimal places. 
+			ex: 1.23, 3.14159
+			. can store numbers in 4bytes of memory
+		- double
+			. can store numbers in 8 bytes of memory. 
+			
+		- you can get rounding errors. 
+		ex: subtracting 9.90 from 10 could result in .09999999999999645 vs .10. 
+	. Decimal:
+		- can also store special decimal numbers. 
+		- stores with greater precision. 
+		
+	. Boolean
+		- When you need to no if something is on or off, true or false, yes or no. 
+		- set to 0 or 1. 
+		
+		- bool is either true or false. 
+		
+C# VS .NET DATE TYPES
+
+sbyte = System.SByte
+byte = System.Byte
+short = System.Int16
+ushort = System.UInt16
+int = System.Int32
+uint = System.UInt32
+long = System.Int64
+ulong = System.UInt64
+char = System.Char
+float = System.Float
+double = System.Double
+bool = System.Boolean
+decimal = System.Decimal
+
+LITERALS VS VARIABLES
+
+Numerical literals 
+	- by default a numerical literal is either a integer or a double. 
+		ex: nbr = 100; - this is int. 
+		ex: nbr = 99.9; = this is double. 
+Understanding the integer literal defaults
+	- if you want to specify that data type of the literal, 
+	- you can use a suffix. 
+	ex: if you want 10 as a literal long value use:
+		. 10L; - make it unsigned: 10UL
+		
+Understanding floating-point literal defaults
+	- to declare a literal that is of type float, include f or F. 
+	ex: to assign 4.4 to variable my float:
+		. my_float = 4.4f;
+	- to declare a literal of type decimal us m or M. 
+	ex: to assign 1.32 to my_decimal:
+		. my_decimal = 1.32m;
+		
+Understanding String Literals
+	-A string literal is any set of characters between double quotes. 
+	ex: "Hello, World!"
+	ex: "123456789"
+
+CREATING CONSTANTS:
+	- sometimes you wnat to put a value in a variable and freeze it. 
+	- if you create PI and set it to 3.14159 and want it to stay like that. 
+	- to declare variable to hold constant value, use 'const':
+	ex: const float PI = 3.14159;
+	

@@ -1,0 +1,5 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\MethodOverriding\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\MethodOverriding\bin\Release\MethodOverriding.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\MethodOverriding\bin\Release\MethodOverriding.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\MethodOverriding\obj\x86\Release\MethodOverriding.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\MethodOverriding\obj\x86\Release\MethodOverriding.pdb

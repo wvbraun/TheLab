@@ -1,0 +1,7 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingDelegates\bin\Debug\UsingDelegates.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingDelegates\bin\Debug\UsingDelegates.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingDelegates\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingDelegates\obj\x86\Debug\UsingDelegates.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingDelegates\obj\x86\Debug\UsingDelegates.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch10\UsingDelegates\UsingDelegates\obj\x86\Debug\UsingDelegates.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch10\UsingDelegates\UsingDelegates\obj\x86\Debug\UsingDelegates.pdb

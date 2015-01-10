@@ -1,0 +1,41 @@
+2015-01-09 14:56:40,667 INFO  [org.eclim.eclipse.EclimDaemon] Workspace: /home/bp/code/hackerRank
+2015-01-09 14:56:40,714 INFO  [org.eclim.eclipse.EclimDaemon] Home: /opt/eclipse/plugins/org.eclim_2.4.0/
+2015-01-09 14:56:40,715 INFO  [org.eclim.eclipse.EclimDaemon] Starting eclim...
+2015-01-09 14:56:40,722 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim
+2015-01-09 14:56:40,736 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim.core
+2015-01-09 14:56:40,972 INFO  [org.eclim.plugin.core.CorePlugin] Loading eclim plugins...
+2015-01-09 14:56:41,020 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.jdt
+2015-01-09 14:56:41,027 INFO  [org.eclim.plugin.core.CorePlugin] Plugins loaded.
+2015-01-09 14:56:41,028 INFO  [org.eclim.eclipse.EclimDaemon] Loaded plugin org.eclim.core
+2015-01-09 14:56:41,029 INFO  [org.eclim.eclipse.EclimDaemon] Eclim Server Started on: 127.0.0.1:9091
+2015-01-09 14:56:41,061 ERROR [org.eclim.plugin.jdt.PluginResources] 
+java.lang.NullPointerException
+	at org.eclim.plugin.jdt.PluginResources.initializeVars(PluginResources.java:286)
+	at org.eclim.plugin.jdt.PluginResources.initialize(PluginResources.java:106)
+	at org.eclim.plugin.Plugin.activate(Plugin.java:121)
+	at org.eclim.plugin.Plugin.bundleChanged(Plugin.java:225)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:902)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+2015-01-09 14:56:41,258 ERROR [org.eclim.eclipse.EclimDaemon] Error starting eclim:
+java.lang.RuntimeException: java.net.BindException: Address already in use
+	at com.martiansoftware.nailgun.NGServer.run(NGServer.java:426)
+	at org.eclim.eclipse.EclimDaemon.start(EclimDaemon.java:160)
+	at org.eclim.eclipse.ui.EclimdView$1.run(EclimdView.java:59)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at com.martiansoftware.nailgun.NGServer.run(NGServer.java:408)
+	... 2 more
+2015-01-09 15:15:06,562 INFO  [org.eclim.eclipse.EclimDaemon] Workspace: /home/bp/code/hackerRank
+2015-01-09 15:15:06,562 INFO  [org.eclim.eclipse.EclimDaemon] Home: /opt/eclipse/plugins/org.eclim_2.4.0/
+2015-01-09 15:15:06,562 INFO  [org.eclim.eclipse.EclimDaemon] Starting eclim...
+2015-01-09 15:15:06,563 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim
+2015-01-09 15:15:06,563 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim.core
+2015-01-09 15:15:16,564 INFO  [org.eclim.eclipse.EclimDaemon] Eclim Server Started on: 127.0.0.1:9091
+2015-01-09 15:34:36,938 INFO  [org.eclim.eclipse.EclimDaemon] Shutting down eclim...
+2015-01-09 15:34:36,942 INFO  [org.eclim.eclipse.EclimDaemon] Stopping plugin org.eclim.core
+2015-01-09 15:34:36,946 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.jdt
+2015-01-09 15:34:36,947 INFO  [org.eclim.eclipse.EclimDaemon] Eclim stopped.

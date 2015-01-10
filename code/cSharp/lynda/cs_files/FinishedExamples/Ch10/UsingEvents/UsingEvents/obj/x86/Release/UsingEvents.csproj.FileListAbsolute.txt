@@ -1,0 +1,12 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingEvents\bin\Release\UsingEvents.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingEvents\bin\Release\UsingEvents.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingEvents\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingEvents\obj\x86\Release\UsingEvents.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\UsingEvents\obj\x86\Release\UsingEvents.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch10\UsingEvents\UsingEvents\obj\x86\Release\UsingEvents.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch10\UsingEvents\UsingEvents\obj\x86\Release\UsingEvents.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\FinishedExamples\Ch10\UsingEvents\UsingEvents\bin\Release\UsingEvents.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\FinishedExamples\Ch10\UsingEvents\UsingEvents\bin\Release\UsingEvents.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\FinishedExamples\Ch10\UsingEvents\UsingEvents\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\FinishedExamples\Ch10\UsingEvents\UsingEvents\obj\x86\Release\UsingEvents.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\FinishedExamples\Ch10\UsingEvents\UsingEvents\obj\x86\Release\UsingEvents.pdb

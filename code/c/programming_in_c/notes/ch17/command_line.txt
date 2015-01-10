@@ -1,0 +1,8 @@
+To access the command line arguments, the main function must be
+declared as taking 2 args:
+
+int main (int argc, char *argv[]) {
+	...
+}
+
+

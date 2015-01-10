@@ -1,0 +1,5 @@
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\Conversion\Conversion\bin\Debug\Conversion.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\Conversion\Conversion\bin\Debug\Conversion.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\Conversion\Conversion\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\Conversion\Conversion\obj\x86\Debug\Conversion.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\Conversion\Conversion\obj\x86\Debug\Conversion.pdb

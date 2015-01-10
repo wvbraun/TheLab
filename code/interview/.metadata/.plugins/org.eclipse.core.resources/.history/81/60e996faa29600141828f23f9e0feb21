@@ -1,0 +1,12 @@
+package tests.interview.general;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import code.interview.general.Strings;
+
+public class StringsTest {
+
+}

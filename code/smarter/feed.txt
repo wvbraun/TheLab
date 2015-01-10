@@ -1,0 +1,7 @@
+Product_id**Master_id**Name
+x**123**name1
+y**123**name1
+z**123**name1
+a**234**name2
+b**234**name2
+c**234**name2

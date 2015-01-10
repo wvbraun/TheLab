@@ -1,0 +1,14 @@
+C:\Users\joemarin\AppData\Local\Temporary Projects\ConditionalCode\bin\Debug\ConditionalCode.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\ConditionalCode\bin\Debug\ConditionalCode.pdb
+C:\Users\joemarin\AppData\Local\Temporary Projects\ConditionalCode\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarin\AppData\Local\Temporary Projects\ConditionalCode\obj\x86\Debug\ConditionalCode.exe
+C:\Users\joemarin\AppData\Local\Temporary Projects\ConditionalCode\obj\x86\Debug\ConditionalCode.pdb
+C:\Users\joemarin\documents\visual studio 2010\Projects\ConditionalCode\ConditionalCode\obj\x86\Debug\ConditionalCode.exe
+C:\Users\joemarin\documents\visual studio 2010\Projects\ConditionalCode\ConditionalCode\obj\x86\Debug\ConditionalCode.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\ConditionalCode\ConditionalCode\obj\x86\Debug\ConditionalCode.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch3\ConditionalCode\ConditionalCode\obj\x86\Debug\ConditionalCode.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\ConditionalCode\ConditionalCode\obj\x86\Debug\ConditionalCode.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\ConditionalCode\ConditionalCode\obj\x86\Debug\ConditionalCode.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\ConditionalCode\ConditionalCode\bin\Debug\ConditionalCode.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\ConditionalCode\ConditionalCode\bin\Debug\ConditionalCode.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch3\ConditionalCode\ConditionalCode\obj\x86\Debug\ResolveAssemblyReference.cache

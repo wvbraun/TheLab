@@ -1,0 +1,34 @@
+
+
+"hello"
+=> "hello"
+42
+=> 42
+(+ 76 31)
+=> 107
+
+ex: defining a procedure
+
+(define square
+	(lambda (n)
+		(* n n)))
+
+(square 5)
+=> 25
+(square -200)
+=> 40000
+(square 0.5)
+=> 0.25
+
+ex: reciprocal.ss
+(define reciprocal
+ (lambda (n)
+  (if (=n 0)
+   "oops!"
+   (/ 1 n))))
+
+now if i am in the scheme interpretor i can use:
+
+(load "reciprocal.ss")
+(reciprocal 10)
+=> 1/10

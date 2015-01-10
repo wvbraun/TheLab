@@ -1,0 +1,29 @@
+The complier makes assumptions about argument types. In the
+absenceof info about the argument types to a function, the
+complier automatically converts _Bool, char, or short args 
+to ints and converts float args to double. 
+
+ex:
+
+float x;
+	...
+y = absoluteValue (x);
+
+Having not seen the defintion of absoluteValue, the complier
+converts the float (x) to double and passes the result to the
+function. 
+
+if the absoluteValue func is defined inside another source
+file like this:
+
+float absoluteValue (float x) {
+
+	if (x < 0.0)
+		x = -x;
+
+	return x;
+}
+
+Bad!!! First, the function returns a float, yet the complier
+thinks it is an int. Seecond, the function expects to see 
+a float argument, but the complier will pass a double. 

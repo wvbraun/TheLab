@@ -1,0 +1,5 @@
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Arrays\Arrays\bin\Release\Arrays.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Arrays\Arrays\bin\Release\Arrays.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Arrays\Arrays\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Arrays\Arrays\obj\x86\Release\Arrays.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch6\Arrays\Arrays\obj\x86\Release\Arrays.pdb

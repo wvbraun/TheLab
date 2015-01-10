@@ -1,0 +1,42 @@
+A zombie virus pandemic has spread across the globe. It appears to be an extinction 
+event unlike anything humanity has seen before. The main character must go make his way
+through a series of zombie encounters. 
+
+Death:
+	This is when the player dies, it should be quite grim. 
+Ground Zero:
+	This is the starting point; the initial areal of the outbreak. The character 
+	will encounter someone significant to him that he must defeat. 
+City Limit:
+	The character must reach the outskirts of the city before the Army 
+	denotes a massive nuclear bomb in hopes of containing the virus. 
+Survivors:
+	The character meets other survivors, can he trust them?
+Escape:
+	The character must face his final battle before he can leave. 
+	
+Zombie
+Player
+Car
+Scene 
+Survivor 
+Antiviral
+Death
+Ground Zero
+City Limit
+Escape
+Map 
+Engine 
+
+Map
+	- next_scene
+	- opening_scene
+Engine 
+	- play
+Scene 
+	- enter 
+	* Death 
+	* Ground Zero
+	* City Limit
+	* Survivors 
+	* Escape

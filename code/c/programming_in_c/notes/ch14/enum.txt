@@ -1,0 +1,83 @@
+An enumerated data type def is initated by the keyword enum. 
+Immediately following is the name of the enum data type, 
+followed by a list of identifiers. 
+
+ex:
+
+enum primaryColor {red, yellow, blue};
+
+variables declared of this data type can be assigned the 
+values red, yellow, and blue, and no other variables. 
+
+---
+To declare a variable to be of type enum primaryColor, you 
+use enum followed by enum type namme, followed by variable 
+list. 
+
+ex:
+
+enum primaryColor myColor, brandonsColor;
+
+this defines myColor and brandonsColor to be of the type 
+primaryColor. 
+
+myColor = red;
+
+if (brandonsColor == yellow)
+	...	
+
+----------------------
+
+ex:
+
+enum month {jan, feb, mar, apr, may, jun, jul, aug, sept, oct,
+		nov, dec};
+
+if your program contains these two lines:
+
+enum month thisMonth;
+	...
+
+thisMonth = feb;
+
+the value 1 is assigned to thisMonth, and not the name feb. 
+
+------
+
+if you want to have a specific int value associated with an
+enum, the int can be assigned to the identifer. 
+
+ex:
+
+enum direction { up, down, left =10, right};
+
+assigns up = 0, down = 1, left = 10, right = 11
+
+-------------------------------------------
+
+enums can share the same value:
+
+ex:
+enum switch { no = 0, off=0, yes=1, on=1};
+
+-------
+
+explicity assigning an int value to an enum can be done 
+with the type cast operator. so if monthValue is an int w/ 
+value of 6:
+
+thisMonth = (enum month) (monthValue -1);
+
+assigns 5 to thisMonth. 
+
+-----------------------
+
+the name of the data type can be omitted, and variables can
+be declared to be of the particular enum. 
+
+ex: 
+
+enum {east, west, south, north} direction;
+
+defines an unnamed enum data type w/ values east, west, south,
+or north. and declared directionto be of that type. 

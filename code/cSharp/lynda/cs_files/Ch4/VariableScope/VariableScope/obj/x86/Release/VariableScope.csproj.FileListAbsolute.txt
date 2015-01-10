@@ -1,0 +1,10 @@
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\VariableScope\VariableScope\bin\Release\VariableScope.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\VariableScope\VariableScope\bin\Release\VariableScope.pdb
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\VariableScope\VariableScope\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\VariableScope\VariableScope\obj\x86\Release\VariableScope.exe
+C:\Users\joemarin\Documents\Visual Studio 2010\Projects\CSharpEssT\Ch4\VariableScope\VariableScope\obj\x86\Release\VariableScope.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\VariableScope\VariableScope\obj\x86\Release\VariableScope.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\VariableScope\VariableScope\obj\x86\Release\VariableScope.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\VariableScope\VariableScope\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\VariableScope\VariableScope\bin\Release\VariableScope.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch4\VariableScope\VariableScope\bin\Release\VariableScope.pdb

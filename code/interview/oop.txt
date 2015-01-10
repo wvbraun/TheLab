@@ -1,0 +1,124 @@
+
+Polymorphism - 
+	A polymorphic type is a type whose operations can also be applied to
+	values of some other type, or types. 
+
+	Example: Given a base class shape, polymorphism enables the programmer
+	to define different area methods for any number of derived classes,
+	such as circles, rectangles, and triagnles. 
+
+	Suppose you have a drawing application that enables a user to create 
+	various kinds of shapes on a drawing surface. The application has to
+	keep track of all the various types of shapes that are created, and it
+	has to update them in response to user mouse actions. You can use
+	polymorphism to solve this problem in two basic steps:
+
+		1. Create a class hierachy in which each specific shape class 
+		   derives from a common base name. 
+
+		2. Use a virtual method to invoke the approriate method on any
+		   derived class though a single call to the base class method. 
+
+
+Encapsulation - 
+	The technique of making the fields in a class private and providing 
+	access to the field via public methods. If a field is declared private,
+	it cannot be accessed by anyone outside the class thereby hiding the
+	fields within the class. Encapsulation is also known as data hiding. 
+
+	Encapsulation can be described as a protective barrier that prevents
+	the code and data being randomly accessed by other code defined outside
+	the class. 
+
+
+Inheritance - 
+	Inheritance is when an object or class is based on another class
+	or object, using the same implementation. It allows you to crate
+	new classes that reuse, extend, and modify the behavior that is 
+	defined in other classes. 
+
+	The class whose members are inherited is called the base class, and
+	the class that inherits those members is called the derived class. 
+	A derived class can have only one direct base class. If ClassC is
+	derived from ClassB, and ClassB is derived from ClassA, ClassC 
+	inherits the members declared in ClassB and ClassA. 
+
+
+---------------------------------------------------------------------------------------------
+Reference - 	
+	A reference type contains a pointer to another memory location that
+	holds the data. Reference types include:
+
+		- String
+		- All arrays, even if the elements are value types
+		- Class types
+		- Delegates 
+
+	A class is a reference type.
+
+	
+
+Value Types - 
+	A data type is a value type if it holds the data within its own 
+	memory allocation. Value types include:
+
+		- All numeric data types
+		- Boolean, Char, and Date
+		- All structures, even if their members are reference types
+		- Enumerations, since their underlying type is always SByte,
+		  Short, Integer, Long, Byte, UShort, UInteger, or ULong. 
+
+	Every structure is a value type, even if it contains reference type
+	members. You can declare a value type by using the reserved keyword.
+
+---------------------------------------------------------------------------------------------
+Constructor - 
+	Whenever a class or struct is created, its constructor is called. A
+	class or struct may have multiple constructors that take different
+	arguments. Constructors enable the programmer to set default value,
+	limit instantiation, and write code that is flexible and easy to
+	read. 
+
+	If you do not provide a constructor for your object, C# will create
+	one by default that instantiates the object and sets member variables
+	to the default values. 
+
+Property - 
+	A property is a member that provides a flexible mechanism to read, 
+	write, or compute the value of a private field. Properites can be 
+	used as if they are public data members, but they are actually 
+	special methods called accessors. This enables data be easily
+	accessed. 
+
+Method - 
+	A method is a code block that contains a series of statements. A 
+	program causes the statements to be executed by calling the method
+	and specifying any requierd method arguments. In C#, every executed
+	instruction is performed in the context of a method. 
+
+Member - 
+	Classes and structs have members that represent their data and 
+	behavior. A class's members include all the members declared in 
+	the class, along with all members declared in all classes in its
+	inheritance hieracy. 
+
+---------------------------------------------------------------------------------------------
+Public -
+	The public keyword is an access modifier for types and type members.
+	There are no restrictions on accessing public members. 
+
+Private - 
+	The private keyword is a member access modifer. Private members are
+	only accessible within the body of the class or the struct in which
+	they are declared. 
+
+New - 
+	The new keyword can be used as an operator, a modifier, or a constraint.
+
+Static - 
+	Use the static modifier to declare a static member, which belongs 
+	to the type itself rather than to a specific object. 
+
+Void - 
+	When used as the return type for a method, void specifies that the 
+	method does not return a value. 

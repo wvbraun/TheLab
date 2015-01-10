@@ -1,0 +1,8 @@
+Breakpoints
+
+Breakpoints mark a point in your code where the execution
+will take a break. 
+
+You can place a breakpoint in Visual Studio by
+left-clicking in the gutter, which is the grey area to
+the left of the code. 

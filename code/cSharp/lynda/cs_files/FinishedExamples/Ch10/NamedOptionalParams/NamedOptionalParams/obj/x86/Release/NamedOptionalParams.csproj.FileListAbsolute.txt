@@ -1,0 +1,7 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\NamedOptionalParams\bin\Release\NamedOptionalParams.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\NamedOptionalParams\bin\Release\NamedOptionalParams.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\NamedOptionalParams\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\NamedOptionalParams\obj\x86\Release\NamedOptionalParams.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\NamedOptionalParams\obj\x86\Release\NamedOptionalParams.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch10\NamedOptionalParams\NamedOptionalParams\obj\x86\Release\NamedOptionalParams.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch10\NamedOptionalParams\NamedOptionalParams\obj\x86\Release\NamedOptionalParams.pdb

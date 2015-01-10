@@ -1,0 +1,39 @@
+5.1
+
+A pointer is a variable that contains the address of a variable. 
+
+----------------------
+
+int x = 1, y = 2, z[10];
+int *ip; // ip is a pointer to int 
+
+ip = &x; // ip now points to x
+y = *ip // y is now 1 (bc ip points to x, x = 1)
+*ip = 0; // x is now 0
+ip = &z[0]; // ip now points to z[0]
+
+-----
+ex:
+double *dp, atof(char *);
+
+*dp and atof have valuses of type double, and that the argument
+of atof is a pointer to char. 
+
+----------------------------------------------------------------
+5.2 
+
+Pointer arguments enable a function to access and change objects 
+in the function that called it. 
+Consier a function getint that breaks a stream of characters 
+into integer vaules, one integer per call. getint has to return 
+the value it found and also signal end of file when there is no 
+more input. 
+
+the following loop fills an array with integers by calls to getint:
+
+int n, array[SIZE], getint(int *);
+
+for (n = 0; n < SIZE && getint(&array[n]) != EOF; n++)
+
+// each call sets array[n] to the next integer found in the 
+input and increments n. 

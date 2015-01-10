@@ -1,0 +1,46 @@
+package tests.interview.general;
+
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import code.interview.general.Array;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class ArrayTest 
+{
+	private Array array;
+	
+	Class<?> c;
+	
+	@Before
+	public void setup() throws ClassNotFoundException 
+	{
+		try 
+		{
+			c = Class.forName("code.interview.general.Array");
+		} 
+		finally 
+		{
+		}
+	}
+	
+	@Before
+	public void setUp() throws Exception 
+	{
+		ArrayList<Integer> ls =  
+				new ArrayList<Integer>(Arrays.asList(0, 0, 1, 2, 3, 4, 0, 5, 5, 6, 4, 7));
+		array = new Array(ls);
+	} 
+	
+	@Test
+	public void testFindMostFrequent()
+	{
+		assertEquals(0, array.findMostFrequent());
+	}
+
+}

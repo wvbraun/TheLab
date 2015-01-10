@@ -1,0 +1,291 @@
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>clojure.tools.trace - Execution tracing tool 0.7.7 API documentation</title>
+    <link href="static/favicon.png" rel="icon" />
+    <link href="static/favicon.png" rel="shortcut icon" />
+    <link media="all" type="text/css" href="static/clojure.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/wiki.css" rel="stylesheet" />
+    <link media="all" type="text/css" href="static/internal.css" rel="stylesheet" />
+    <style>.menuWrapper{height: 36px;}</style>
+  </head>
+<!--
+This document was auto-generated from the source by the clojure autodoc system.
+To report errors or ask questions about the overall documentation structure, formatting,
+etc., contact Tom Faulhaber (google mail name: tomfaulhaber).
+For errors in the documentation of a particular namespace, contact the author of that
+namespace.
+-->
+  <body>
+    <div id="AllContentContainer">
+      <div id="Header">
+	<a id="Logo" href="index.html"><img alt="Clojure" height="100" width="100" src="static/clojure-icon.gif" /></a>
+	<h1><a title="page header title" id="page-header" href="index.html">tools.trace API Reference</a></h1>
+      </div>
+      <div id="leftcolumn"><div style="text-align: center;"></div>
+<div class="menu">
+  <div class="WikiCustomNav WikiElement wiki">
+    <span class="toc-header"><span id="project-name">Execution tracing tool</span> <span id="version">0.7.7</span> API</span><br />
+    <ul>
+      <li><a class="wiki_link" href="index.html">Overview</a></li>
+      <li><a class="wiki_link" href="api-index.html">API Index</a></li>
+    </ul>
+    
+    
+    <a href="http://clojure.org" class="wiki_link">Clojure Home</a>
+  </div>
+</div>
+</div>
+      <div id="rightcolumn">
+	<div id="Content">
+	  <div class="contentBox"><div class="innerContentBox">
+              <div id="content_view" class="wiki wikiPage">
+                <div id="right-sidebar"><div id="toc">
+  <h1 class="nopad">Table of Contents</h1>
+  <div style="margin-left: 1em;" class="toc-section">
+    <a href="#toc0" style="margin-top: 3px;">Overview</a>
+    
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#proto-section" style="margin-top: 3px;">Protocols</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.trace/ThrowableRecompose">ThrowableRecompose</a>
+      <div style="margin-left: 1em;" class="toc-subentry">
+        <a class="toc-subentry-anchor" href="#clojure.tools.trace/clone-throwable">clone-throwable</a>
+      </div>
+    </div>
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#" style="margin-top: 3px;"></a>
+    
+  </div><div style="margin-left: 1em;" class="toc-section">
+    <a href="#var-section" style="margin-top: 3px;">Vars and Functions</a>
+    <div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.trace/deftrace">deftrace</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.trace/dotrace">dotrace</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.trace/trace">trace</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.trace/trace-forms">trace-forms</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.trace/trace-ns">trace-ns</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.trace/trace-vars">trace-vars</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.trace/traceable?">traceable?</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.trace/traced?">traced?</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.trace/untrace-ns">untrace-ns</a>
+      
+    </div><div style="margin-left: 1em;" class="toc-entry">
+      <a class="toc-entry-anchor" href="#clojure.tools.trace/untrace-vars">untrace-vars</a>
+      
+    </div>
+  </div>
+</div>
+</div>
+                <div id="content-tag"><h1 id="overview">API for <span id="clojure.tools.trace">clojure.tools.trace</span>
+  - <span id="header-project">Execution tracing tool</span> <span id="header-version">0.7.7</span><span id="header-status-block"> (<span id="header-status">in development</span>)</span>
+  </h1>
+<span id="author-line">by <span id="author-name">Stuart Sierra, Michel Salim, Luc Préfontaine, Jonathan Fischer Friberg, Michał Marczyk, Don Jackson</span><br /></span>
+<br />Full namespace name: <span id="long-name">clojure.tools.trace</span>
+<p></p>
+<h2>Overview</h2>
+<div id="home-page">Project home page is <a href="http://github.com/clojure/tools.trace/">http://github.com/clojure/tools.trace/</a></div>
+<pre id="namespace-docstr">This file defines simple tracing macros to help you see what your code is doing.</pre>
+
+
+<br />
+
+<div id="proto-section">
+  <p></p>
+  <h2>Protocols</h2>
+  <div id="proto-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.trace/ThrowableRecompose">ThrowableRecompose</h2>
+    <span id="proto-type">Protocol</span><br />
+    <pre id="proto-docstr">Protocol to isolate trace-form from convoluted throwables that 
+do not have a constructor with a single string argument.
+
+clone-throwable attempts to clone a throwable with a human readable stack trace
+and message :)
+It must return a throwable of the same class. If not clonable, the original
+throwable should be returned. At least this will preserve the original 
+throwable information.
+
+Cloning should be non-obtrusive hence internal exceptions should be silently
+swallowed and return the original throwable.</pre>
+    Known implementations: <span id="proto-impls">java.lang.AssertionError, java.lang.ThreadDeath, java.lang.Throwable, java.nio.charset.CoderMalfunctionError, nil, Object</span>
+    <div id="proto-var-entry">
+      <br />
+      <h3 id="clojure.tools.trace/clone-throwable">clone-throwable</h3>
+      <span id="var-type">function</span><br />
+      <pre id="var-usage">Usage: (clone-throwable this stack-trace args)
+</pre>
+      <pre id="var-docstr"></pre>
+      
+      
+      
+    </div>
+    
+    
+    <a href="https://github.com/clojure/tools.trace/blob/212011b70596c1623c2d27ade09d0de27ba0d104/src/main/clojure/clojure/tools/trace.clj#L211" id="proto-source">Source</a>
+  </div>
+</div>
+
+<div id="var-section">
+  <p></p>
+  <h2>Public Variables and Functions</h2>
+  <div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.trace/deftrace">deftrace</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (deftrace name &amp; definition)
+</pre>
+    <pre id="var-docstr">Use in place of defn; traces each call/return of this fn, including
+arguments. Nested calls to deftrace'd functions will print a
+tree-like structure.
+The first argument of the form definition can be a doc string</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.trace/blob/212011b70596c1623c2d27ade09d0de27ba0d104/src/main/clojure/clojure/tools/trace.clj#L102" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.trace/dotrace">dotrace</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (dotrace fnames &amp; exprs)
+</pre>
+    <pre id="var-docstr">Given a sequence of function identifiers, evaluate the body
+expressions in an environment in which the identifiers are bound to
+the traced functions. Does not work on inlined functions,
+such as clojure.core/+</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.trace/blob/212011b70596c1623c2d27ade09d0de27ba0d104/src/main/clojure/clojure/tools/trace.clj#L116" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.trace/trace">trace</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (trace value)
+       (trace name value)
+</pre>
+    <pre id="var-docstr">Sends name (optional) and value to the tracer function, then
+returns value. May be wrapped around any expression without
+affecting the result.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.trace/blob/212011b70596c1623c2d27ade09d0de27ba0d104/src/main/clojure/clojure/tools/trace.clj#L77" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.trace/trace-forms">trace-forms</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (trace-forms &amp; body)
+</pre>
+    <pre id="var-docstr">Trace all the forms in the given body. Returns any underlying uncaught exceptions that may make the forms fail.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.trace/blob/212011b70596c1623c2d27ade09d0de27ba0d104/src/main/clojure/clojure/tools/trace.clj#L308" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.trace/trace-ns">trace-ns</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (trace-ns ns)
+</pre>
+    <pre id="var-docstr">Trace all fns in the given name space.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.trace/blob/212011b70596c1623c2d27ade09d0de27ba0d104/src/main/clojure/clojure/tools/trace.clj#L384" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.trace/trace-vars">trace-vars</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (trace-vars &amp; vs)
+</pre>
+    <pre id="var-docstr">Trace each of the specified Vars.
+The arguments may be Var objects or symbols to be resolved in the current
+namespace.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.trace/blob/212011b70596c1623c2d27ade09d0de27ba0d104/src/main/clojure/clojure/tools/trace.clj#L356" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.trace/traceable?">traceable?</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (traceable? v)
+</pre>
+    <pre id="var-docstr">Returns true if the given var can be traced, false otherwise</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.trace/blob/212011b70596c1623c2d27ade09d0de27ba0d104/src/main/clojure/clojure/tools/trace.clj#L409" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.trace/traced?">traced?</h2>
+    <span id="var-type">function</span><br />
+    <pre id="var-usage">Usage: (traced? v)
+</pre>
+    <pre id="var-docstr">Returns true if the given var is currently traced, false otherwise</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.trace/blob/212011b70596c1623c2d27ade09d0de27ba0d104/src/main/clojure/clojure/tools/trace.clj#L403" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.trace/untrace-ns">untrace-ns</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (untrace-ns ns)
+</pre>
+    <pre id="var-docstr">Untrace all fns in the given name space.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.trace/blob/212011b70596c1623c2d27ade09d0de27ba0d104/src/main/clojure/clojure/tools/trace.clj#L398" id="var-source">Source</a>
+  </div><div id="var-entry">
+    <br />
+    <hr />
+    <h2 id="clojure.tools.trace/untrace-vars">untrace-vars</h2>
+    <span id="var-type">macro</span><br />
+    <pre id="var-usage">Usage: (untrace-vars &amp; vs)
+</pre>
+    <pre id="var-docstr">Untrace each of the specified Vars.
+Reverses the effect of trace-var / trace-vars / trace-ns for each
+of the arguments, replacing the traced functions with the original,
+untraced versions.</pre>
+    
+    
+    <a href="https://github.com/clojure/tools.trace/blob/212011b70596c1623c2d27ade09d0de27ba0d104/src/main/clojure/clojure/tools/trace.clj#L363" id="var-source">Source</a>
+  </div>
+</div>
+
+
+</div>
+              </div>
+            </div>
+          </div>
+	</div>
+	<div id="foot">
+	  <div style="text-align: center;" id="copyright">Copyright 2007-2013 by Rich Hickey and the various contributors</div>
+	</div>
+      </div>
+      <div id="DesignedBy">Logo &amp; site design by <a title="Visit Tom Hickey's website." href="http://www.tomhickey.com">Tom Hickey</a>.<br />
+      Clojure auto-documentation system by Tom Faulhaber.</div>
+    </div>
+    <!-- /AllContentContainer -->
+  </body>
+
+</html>

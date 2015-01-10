@@ -1,0 +1,50 @@
+>>> set = {1}
+>>> set
+{1}
+>>> type(set)
+<class 'set'>
+
+you cann create a set from a list
+
+>>> list = ['w', 2, 4, 'a']
+>>> a_set = set(list)
+>>> a_set
+{'a', 'w', 2, 4}
+
+------------------------
+Modifying a set:
+
+add:
+
+>>> a_set = {1,2,}
+>>> a_set.add(3)
+>>> a_set
+{1,2,3}
+>>> len(a_set)
+3
+
+update:
+>>> a_set.update({2, 4, 6})
+>>> a_set
+{1,2,3,4,6}
+
+remove:
+
+>>> a_set.remove(3)
+>>> a_set
+{1,2,4,6}
+
+discard:
+>>> a_set.discared(2)
+>>> a_set
+{1,4,6}
+
+pop: pops an arbitrary number. 
+
+>>> a_set.pop()
+1
+
+clear: 
+>>> a_set.clear()
+>>> a_set
+set()

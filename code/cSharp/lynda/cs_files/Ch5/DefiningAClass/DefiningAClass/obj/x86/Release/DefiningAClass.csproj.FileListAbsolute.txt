@@ -1,0 +1,10 @@
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\DefiningAClass\DefiningAClass\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\DefiningAClass\DefiningAClass\bin\Release\DefiningAClass.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\DefiningAClass\DefiningAClass\bin\Release\DefiningAClass.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\DefiningAClass\DefiningAClass\obj\x86\Release\DefiningAClass.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\DefiningAClass\DefiningAClass\obj\x86\Release\DefiningAClass.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch5\DefiningAClass\DefiningAClass\obj\x86\Release\DefiningAClass.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch5\DefiningAClass\DefiningAClass\obj\x86\Release\DefiningAClass.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch5\DefiningAClass\DefiningAClass\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch5\DefiningAClass\DefiningAClass\bin\Release\DefiningAClass.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch5\DefiningAClass\DefiningAClass\bin\Release\DefiningAClass.pdb

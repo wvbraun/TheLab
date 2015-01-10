@@ -1,0 +1,5 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\Preprocessor\bin\Release\Preprocessor.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\Preprocessor\bin\Release\Preprocessor.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\Preprocessor\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\Preprocessor\obj\x86\Release\Preprocessor.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\Preprocessor\obj\x86\Release\Preprocessor.pdb

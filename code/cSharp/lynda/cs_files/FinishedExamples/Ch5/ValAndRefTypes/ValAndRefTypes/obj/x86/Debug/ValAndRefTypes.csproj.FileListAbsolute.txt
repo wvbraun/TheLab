@@ -1,0 +1,7 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\ValAndRefTypes\bin\Debug\ValAndRefTypes.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\ValAndRefTypes\bin\Debug\ValAndRefTypes.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\ValAndRefTypes\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\ValAndRefTypes\obj\x86\Debug\ValAndRefTypes.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\ValAndRefTypes\obj\x86\Debug\ValAndRefTypes.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\ValAndRefTypes\ValAndRefTypes\obj\x86\Debug\ValAndRefTypes.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch5\ValAndRefTypes\ValAndRefTypes\obj\x86\Debug\ValAndRefTypes.pdb

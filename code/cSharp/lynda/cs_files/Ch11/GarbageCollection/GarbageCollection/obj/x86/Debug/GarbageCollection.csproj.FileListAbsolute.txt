@@ -1,0 +1,15 @@
+C:\Users\joemarini\AppData\Local\Temporary Projects\GarbageCollection\bin\Debug\GarbageCollection.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\GarbageCollection\bin\Debug\GarbageCollection.pdb
+C:\Users\joemarini\AppData\Local\Temporary Projects\GarbageCollection\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\joemarini\AppData\Local\Temporary Projects\GarbageCollection\obj\x86\Debug\GarbageCollection.exe
+C:\Users\joemarini\AppData\Local\Temporary Projects\GarbageCollection\obj\x86\Debug\GarbageCollection.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch11\GarbageCollection\GarbageCollection\obj\x86\Debug\GarbageCollection.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch11\GarbageCollection\GarbageCollection\obj\x86\Debug\GarbageCollection.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch11\GarbageCollection\GarbageCollection\bin\Debug\GarbageCollection.exe
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch11\GarbageCollection\GarbageCollection\bin\Debug\GarbageCollection.pdb
+C:\Users\joemarini\Documents\Lynda\CSharpEssT\Exercise Files\Ch11\GarbageCollection\GarbageCollection\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch11\GarbageCollection\GarbageCollection\obj\x86\Debug\GarbageCollection.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch11\GarbageCollection\GarbageCollection\obj\x86\Debug\GarbageCollection.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch11\GarbageCollection\GarbageCollection\bin\Debug\GarbageCollection.exe
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch11\GarbageCollection\GarbageCollection\bin\Debug\GarbageCollection.pdb
+C:\Users\Joe Marini\Desktop\Exercise Files\Ch11\GarbageCollection\GarbageCollection\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,67 @@
+
+We can add exceptions to our code with:
+
+try
+{
+	<code>
+}
+catch
+{
+	<do this if something goes wrong>
+}
+
+
+int[] numbers = new int[2];
+
+try
+{
+	numbers[0] = 23;
+	numbers[1] = 32;
+	numbers[2] = 42;
+	
+	foreach(int i in numbers)
+		Console.WriteLine(i);
+}
+catch
+{
+	Console.WriteLine("Something went wrong!");
+}
+
+
+We can add something to the catch statment to tell us which
+exception we caught. The base of all exceptions is 
+"Exception". 
+
+catch(Exception e)
+{
+	Console.WriteLine("An error occured: {0}", e.Message);
+}
+
+Exception is the most general type of exception. The rules
+of exception handling tells us that we should always use the
+least general typeof exception. 
+
+Another way of finding out which exeception was generated
+is by using:
+
+Console.WriteLine("An error occured: {0}", e.GetType().ToString());
+
+
+When we do that, we get an IndexOutOfRangeException error. 
+We should therefore handle this exception, but nothing prevents
+us from handling more than one exception. 
+
+One more thing to note is the use of the finally block. The
+finally block can be added to a set of catch blocks, or be
+used exclusively, depending on your needs. 
+
+The code within the finally block is always run -- exception
+or no execption. It is a good place if you need to close 
+file references or dispose objects. 
+
+Just add it after the catch block:
+
+finally
+{
+	Console.WriteLine("End of try block!");
+}

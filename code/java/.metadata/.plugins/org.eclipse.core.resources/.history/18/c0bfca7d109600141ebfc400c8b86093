@@ -1,0 +1,73 @@
+package code.util.timer;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+import javax.swing.JPanel;
+
+import javafx.embed.swing.JFXPanel;
+import javafx.scene.control.Button;
+import javafx.scene.text.Font;
+
+@SuppressWarnings("serial")
+public class Timer extends JFXPanel implements Runnable, ActionListener
+{
+	private Date   date;
+	private String time;
+	
+	private Button startButton;
+	
+	public Timer()
+	{
+		date = new Date(0);
+	}
+	
+	private void createAndShowGui() throws IOException
+	{
+		Font  			 font 	     = new Font("Impact", Font.BOLD, 14);
+		SimpleDateFormat formatter   = new SimpleDateFormat("hh:mm:ss", Locale.getDefault());
+						 time        = formatter.format(date);
+						 startButton = new Button("START");
+
+			 
+		startButton.setFont(font);
+		
+		setBackground(Color.WHITE);
+		
+	}
+	
+	public void paintComponent(Graphics g)
+	{
+		g.setColor(Color.GREEN);
+		g.drawString(time, 10, 10);
+	}
+
+	@Override
+	public void run() 
+	{
+		try
+		{
+			createAndShowGui();
+			date.setTime(date.getTime() + 1000);
+			Thread.sleep(1000);
+		}
+		catch (IOException | InterruptedException e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+}
+ 	 	
