@@ -1,0 +1,61 @@
+package games.ticTacToe.view.graphical;
+
+import java.awt.Graphics;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.event.MouseEvent;
+
+import games.ticTacToe.board.Tile;
+
+import javax.swing.JButton;
+
+@SuppressWarnings("serial")
+public class BoardTile extends JButton
+{
+	private int x, y, radius;
+	private Tile tile;
+	
+	private Rectangle rec;
+	
+	public BoardTile(int x, int y, int radius, Tile tile)
+	{
+		this.x      = x;
+		this.y      = y;
+		this.tile   = tile;
+		this.radius = radius;
+	}
+	
+	public boolean contains(int x, int y)
+	{
+		return contains(new Point(x, y));
+	}
+	
+	public boolean contains(Point p)
+	{
+		return rec.contains(p);
+	}
+	
+	public final int getBoardX()
+	{
+		return tile.getPoint().x;
+	}
+	
+	public final int getBoardY()
+	{
+		return tile.getPoint().y;
+	}
+	
+	protected void processMouseEvent(MouseEvent e)
+	{
+		if (contains(e.getPoint()))
+		{
+			super.processMouseEvent(e);
+		}
+	}
+	
+	public void paint(Graphics g)
+	{
+		
+	}
+
+}

@@ -1,8 +1,0 @@
-Whenever a signed int or signed short int is converted into 
-an integer of a larger size, the sign is extended to the left
-when the conversion is performed. This ensures that 
-a short int have a value of -5, will also have the the value 
-of -5 when converted to a long int. 
-
-Whenever an unsigned int is converted to an int of larger 
-size, no sign extension occus. 

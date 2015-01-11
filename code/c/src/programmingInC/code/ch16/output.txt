@@ -1,2 +1,0 @@
-This is a file that I want to be copied. 
-Hopefully it works. 

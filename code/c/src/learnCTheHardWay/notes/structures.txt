@@ -1,5 +1,0 @@
-A structure in C is a collection of other data types that are stored
-in one block of memory but let you access each variable 
-independently by name. 
-
-
