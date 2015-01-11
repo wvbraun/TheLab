@@ -1,7 +1,0 @@
-package tests.interview.general;
-
-public class ArrayTest 
-{
-	private Array array;
-
-}

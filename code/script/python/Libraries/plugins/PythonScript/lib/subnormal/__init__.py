@@ -1,1 +1,0 @@
-import subnormal1def msg():	subnormal1.msg()print "hello from subnormal (init)"	

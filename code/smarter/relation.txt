@@ -1,3 +1,0 @@
-CategoryId**ProductId**Position
-new**123**0
-old**234**1

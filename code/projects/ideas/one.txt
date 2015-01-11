@@ -1,3 +1,0 @@
-to save passwords, etc:
-
-make program to store shit. 

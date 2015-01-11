@@ -1,6 +1,0 @@
-01-21 21:23:21 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Table "GUESTBOOK" not found; SQL statement:
-SELECT "GUESTBOOK".* FROM "GUESTBOOK" [42102-174]
-01-21 21:24:06 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLException: Table "GUESTBOOK" not found; SQL statement:
-SELECT "GUESTBOOK".* FROM "GUESTBOOK" [42102-174]
