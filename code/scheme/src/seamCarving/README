@@ -1,0 +1,6 @@
+The recently discovered seam-carving algorithm with Scheme. 
+
+The code utilizes some abstract data types (ADT) to perform
+higher order operations. 
+
+You should use racket
