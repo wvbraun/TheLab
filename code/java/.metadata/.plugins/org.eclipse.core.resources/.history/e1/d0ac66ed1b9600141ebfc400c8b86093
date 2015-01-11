@@ -1,8 +1,0 @@
-package games.ticTacToe.view.graphical;
-
-import java.awt.event.ActionListener;
-
-public class GraphicalBoardView extends JFrame implements Runnable, ActionListener
-{
-
-}
