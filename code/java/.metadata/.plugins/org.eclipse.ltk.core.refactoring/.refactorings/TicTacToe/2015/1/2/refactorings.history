@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;games.ticTacToe.view.graphical.Tile.java&apos; to &apos;BoardTile.java&apos;&#x0A;- Original project: &apos;TicTacToe&apos;&#x0A;- Original element: &apos;games.ticTacToe.view.graphical.Tile.java&apos;&#x0A;- Renamed element: &apos;games.ticTacToe.view.graphical.BoardTile.java&apos;" description="Rename compilation unit &apos;Tile.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;games.ticTacToe.view.graphical{Tile.java" name="BoardTile.java" references="false" stamp="1420673546268" version="1.0"/>
-</session>

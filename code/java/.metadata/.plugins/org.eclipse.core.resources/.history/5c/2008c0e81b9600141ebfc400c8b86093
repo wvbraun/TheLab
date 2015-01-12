@@ -1,5 +1,0 @@
-package games.ticTacToe.view.graphical;
-
-public class GraphicalBoardView {
-
-}
