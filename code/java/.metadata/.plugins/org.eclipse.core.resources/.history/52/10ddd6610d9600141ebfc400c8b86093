@@ -1,0 +1,88 @@
+package code.util.timer;
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+import javafx.embed.swing.JFXPanel;
+import javafx.scene.control.Button;
+
+@SuppressWarnings("serial")
+public class Timer extends JFXPanel implements Runnable, ActionListener
+{
+	private Date   date;
+	private String time;
+	private Thread t;
+	private boolean threadSuspended;
+	
+	private Button startButton;
+	
+	public Timer()
+	{
+		date = new Date(0);
+		t    = null;
+	}
+	
+	public void start()
+	{
+		if ( t == null ) 
+		{
+	         t = new Thread( this );
+	         t.setPriority(Thread.MIN_PRIORITY );
+	         threadSuspended = false;
+	         t.start();
+	      }
+	      else 
+	      {
+	         if ( threadSuspended ) 
+	         {
+	            threadSuspended = false;
+	            synchronized( this ) 
+	            {
+	               notify();
+	            }
+	         }
+	      }
+	}
+	
+	public void stop()
+	{
+		threadSuspended = true;
+	}
+	
+	private void createAndShowGui() throws IOException
+	{
+		SimpleDateFormat formatter = new SimpleDateFormat("hh:mm:ss", Locale.getDefault());
+		
+			 startButton = new Button("START");
+			 time        = formatter.format(date);
+		
+		setBackground(Color.WHITE);
+	}
+
+	@Override
+	public void run() 
+	{
+		try
+		{
+			createAndShowGui();
+			date.setTime(date.getTime() + 1000);
+			t.sleep(1000);
+		}
+		catch (IOException | InterruptedException e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+}
+ 	 	
