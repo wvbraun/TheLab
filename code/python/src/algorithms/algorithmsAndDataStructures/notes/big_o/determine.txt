@@ -1,0 +1,109 @@
+How to Determine Complexities:
+
+	1. Sequence of statements
+		
+		statement 1;
+		statement 2;
+			...
+		statment k; 
+
+	The total time is found by adding the times for all statements:
+
+		total = time(statement 1) + time(statement 2) + ... + time(statement k)
+
+	If each statmenet is 'simple' (only invloving basic operations) then the time for each
+	statment is constatn and the total time is also constant: O(1). For the below examples
+	we will assume basic operations. 
+
+
+---
+	2. if-then-else statments
+
+		if (condition):
+			sequence of statements 1
+		else:
+			sequence of statments 2
+
+	Here, either sequence 1 will execute, or sequence 2 will. Therefore, the worst-case time
+	is the slowest of the two possibilites: max(time(sequence 1), time(sequence 2)). 
+	For example, if sequence 1 is O(n) and sequence 2 is O(1) the worst-case time for the
+	whole if-then-else statement would be O(n).
+
+---
+
+	3. for loops
+
+		for n in range(10):
+			sequence of statements
+
+	The loop executes n times, so the sequencen of statmenets also executes n times. 
+	Since we assume the statements are O(1), the total time for the for loop is n * O(1), 
+	which is O(n) overall. 
+
+---
+
+	4. Nested loops
+
+		for n in range(10):
+			for m in range(20):
+				sequence of statements
+
+	The outer loop executes n times. Every time the outer loop executes, the inner loop
+	executes m times. As a result, the statements in the inner loop execute a total of 
+	n*m times; thus, the complexity is O(n*m). The total complexity is O(n**2)
+
+-----------------------------------
+Exercises:
+
+What is the worst-case complexity of each of the following:
+
+1. Two loops in a row:
+
+		for value in values:
+			sequence of statments
+		for row in rows:
+			sequence of statements
+
+	How would the complexity change if the second loop also used values?
+
+	1) 
+		a. The first loop is linear and the second loop is also linear. We can represent them
+		like O(n) and O(m), since we do not know which is bigger, we can say that the 
+		complexity is O(n+m), or O(max(n,m)).
+
+		b. They would both have linear growth and would be O(2n), which becomes O(n) once
+		you drop the constant. 
+
+
+2. A nested loop followed by a non-nested loop:
+
+	for value in values:
+		for row in rows:
+			sequence of statements
+
+	for x in range(10):
+		sequence of statments
+
+		
+	2) The nested loop would have quadratic growth, O(n**2), while the non-nested loop
+	would have linear growth, O(n). The total time complexity would then be 
+	O(n**2) + O(n), O(max(O(n**2),O(n))), which becomes O(n**2).
+
+
+For each of the following loops with a method call, determine the overal complexity. 
+Assume that method f takes constant time O(1), and method g takes time linear in the 
+value of its parameter O(k).
+
+1. 
+	for value in values:
+		f(j)
+
+	1) O(n)
+
+2. 
+	for value in values:
+		g(j)
+
+	2) O(n**2)
+
+

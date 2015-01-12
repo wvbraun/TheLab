@@ -1,0 +1,7 @@
+To use timeit, you can create a timer object whose parameters are 
+two statments. The first is what you want to time, the 2nd is a 
+statement that will run once to set up the test. 
+
+t1 = Timer("test1()", "from __main__ import test1")
+print("concat ", t1.timeit(number = 1000), "milliseconds")
+

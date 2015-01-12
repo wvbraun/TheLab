@@ -1,0 +1,90 @@
+Trees 
+
+A tree data structure has a root, branches, and leaves. The difference between a tree in nature
+and one in computer science is that a tree data structure has its root at the top and its leaves
+on the bottom. 
+
+
+Examples of Trees:
+
+	1. Classification tree from biology. 
+		The first property this example demonstrates is that trees are hierarchical. 
+
+		A second property of trees is that all of the children of one node are independent of the
+		children of another node. 
+
+		A third property is that each leaf node is unique. 
+
+	2. File System:
+
+		You can follow a path from the root to any directory. That path will uniquely identify that 
+		subdirectory, and all files in it. 
+
+	Another important property of trees is that you can move entire sections of a tree, called 
+	a subtree, to a different position in the tree without affecting the lower levels of the 
+	hierachy. For example, you could take the entire subtree starting with/etc/, detach etc/ from the
+	root and reattach it under usr/. This would change the unique name of /etc/httpd to
+	/usr/etc/httpd, but it would not affect the contents or any children. 
+
+
+-------------------------------------------------------------------------------------------------------
+Vocabulary
+
+	Node - 
+		A node is a fundamental part of a tree. It can have a name, which we will call the 'key'. A 
+		node may also have additional information. We call this additional information the 'payload.' 
+		
+	Edge - 
+		An edge is another fundamental part of a tree. An edge connects two nodes to show that there is
+		a relationship between them. Every node, except the root, is connected by exactly one incoming
+		edge from another node. Each node may have several outgoing edges. 
+
+	Root - 
+		The root of the tree is the only node without any incoming edges. 
+
+	Path - 
+		A path is an ordered list of nodes that are connected by edges. 
+			ex: mammal -> carnivora -> felidae -> felis -> domestica
+
+	Children - 
+		A set of nodes 'c' that have incoming edges from the same node are said to be the children
+		of that node. 
+
+	Parent - 
+		A node is the parent of all the nodes it connects to with outgoing edges. 
+
+	Sibling - 
+		Nodes in the tree that are children of the same parent are said to be siblings. 
+
+	Subtree -
+		A subtree is a set of nodes and edges comprised of a parent and all the descendants of that
+		parent. 
+
+	Leaf Node - 
+		A leaf node is a node that has no children. 
+
+	Level - 
+		The level of a node 'n' is the number of edges on the path from the root node to 'n.' 
+
+
+	Height - 
+		The height of a tree is equal to the maximum level of any node in the tree. 
+
+--------------------------------------------------------------------------------------------------------
+Formal Definitions of a Tree 
+
+	1. A tree consists of a set of nodes and a set of edges that connect pairs of nodes. 
+		
+		- One node of the tree is designated as the root node. 
+		
+		- Every node 'n', except the root node, is connected by an edge from exactly one other 
+		node 'p', where 'p' is the parent of 'n.' 
+
+		- A unique path traverses from the root to each node. 
+
+		- If each node in the tree has a maximum of two children, we say that the tree is binary 
+		tree. 
+
+	
+	2. A tree is either empty or consists of a root and zero or more subtrees, each of which is 
+	also a tree. The root of each subtree is connected to the root of the parent tree by an edge. 

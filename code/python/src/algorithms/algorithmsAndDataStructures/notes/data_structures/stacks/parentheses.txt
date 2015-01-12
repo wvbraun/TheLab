@@ -1,0 +1,3 @@
+Balanced paranthesis means that each opening symbol has a 
+corresponding closing symbol and the pairs of parentheses are 
+properly nested. 

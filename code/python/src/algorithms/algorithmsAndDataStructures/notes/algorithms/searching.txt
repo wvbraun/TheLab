@@ -1,0 +1,114 @@
+Searching is the alogrithmic process of finding a particular item
+in a collection of items. A search typically answers either True
+or False as whether the item is present. 
+
+In python 'in' is an easy way to ask whether an item is in a list 
+of items:
+
+>>> 15 in [3, 5, 2, 4, 1]
+False
+>>> 3 in [3, 5, 2, 4, 1]
+True
+
+-------------------------------------------------------
+The Sequential Search
+
+When data items are stored ina collection such as a list, we say 
+that they have a linear, or sequential, relationship. Each data 
+item is stored in a position relative to the others. In Python lists,
+these relative positions are the index values of the indiviual items. 
+
+
+		[54][26][93][17][77][31]
+Start:	->|->|->|->|->|->|->|->|
+
+-------
+Analysis of Sequential Search
+
+If the item is not in the list, the only way to know it is to compare
+it against every item present. If there are n items, then the 
+sequential search requires n comparisons to determine that the item
+is not there. In the case where the item is in the list, the 
+analysis is not so straightforward. 
+
+There are actually three different scenarios that can occur. In the
+best case we will find the item inthe first place we look, at the
+beginning of the list. In the worst case, we will not find the item
+until the very last comparison, the nth comparison. 
+
+What about the average case? On average, we will find the item about
+halfway into the list; that is, we will compare against n/2 items. 
+Recall, however, that as n gets large, the coefficeients become 
+insignificant. So the sequential search is O(n).
+
+-------
+
+We assumed earlier that the items in our collection had been 
+randomly placed so that there is no relative order between the items. 
+What would happen to the sequential search if the items were
+ordered in some way? Would we gain any efficiency. 
+
+Assume that the list of items was constructed so that the items
+were in ascending order, from low to high. If the item we are 
+looking for is present in the list, the chance of it being in any
+one of the n positions is still the same as before. We will still 
+have the same number of comparisons to find the item. However, if the
+item is not present there is a sligh advantages. 
+
+Ex: looking for item 50:
+							 x
+		[17][20][26][31][44][54][55][65][77]
+start	-> | ->| ->| ->| ->| ->|
+
+Notice that the items are compared until 54, at this point not only 
+is 54 not the item we want, but no elements beyond 54 can work since
+the list is sorted. 
+
+-----------------------------------------------------------------------
+The Binary Search
+
+It is possible to take greater advantage of the ordered list if we 
+are clever with our comparisons. In the sequential search, when we
+compare against the first item, there at at most n-1 more items to 
+look through if the first one is not the item we want. 
+
+A binary search will start by examining the middle item. If that 
+item is the one we are searching for, we are done. If not, we can
+use the ordered nature of the list to eliminate half of the 
+remaining items. If the item we are searching for is greater than
+the middle item, we know that the entire lower half of the list as 
+well as the middle item can be eliminated from further consideration.
+
+We can then repeat the process with the upper half, starting at the
+middle item and comparing against what we are looking for. 
+
+	
+--------------
+Analysis of Binary Search
+
+Recall that each comparison eliminates about half of the remaining
+items from considerations. What is the max number of comparisons 
+this algorithm will require to check the entire list? If we start
+with n items, about n/2 items will be left after the first comparison. 
+After the second comparison, there will about about n/4. Then
+n/8, n/16, and so on. 
+
+		Analysis of Binary Search
+
+Comparisons		Aproximate Number of Items Left
+
+1				n/2
+2				n/4
+3				n/8
+...
+i				n/(2**i)
+
+When we split the list enough times, we end up with a list that
+has just one item. The number of comparisons needed to reach this
+point is i where n/(2**i) = 1. Solving for i gives us i = log(n). 
+Binary search is O(log(n))
+
+Even though a binary search is generally better than a sequential
+search, for small values of n, the additional cost of sorting is
+probably not worth it. 
+

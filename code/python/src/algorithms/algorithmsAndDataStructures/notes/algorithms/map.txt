@@ -1,0 +1,36 @@
+Implementing the Map Astract Data Type:
+
+A dictionary can store key-data pairs. The key is used to look up the
+associated data value. We refer to this as a map. 
+
+The map abstract data type is defined as follows. The structure is 
+an unordered collection of associations between a key and a data
+value. The keys in a map are all unique so that there is a 
+one-to-one relationship between a key and a value:
+
+	- Map(): Creates a new, empty map. It returns an empty map 
+		collection. 
+
+	- put(key, val): Add a new key-value pair to the map. If the key
+		is already in the map, then replace the old value with the
+		new value. 
+
+	- get(key): Given a key, return the value stored in the map 
+		or None otherwise. 
+
+	- del: Delete the key-value pair from the map using a statement
+		of the form del map[key].
+
+	- len(): Return the number of key-value pairs stored in the map.
+
+	- in: return True for a statement of the form key in the map, 
+		if the given key is the in the map, False otherwise. 
+
+One of the greate benefits of a dictionary is the fact that given a
+key, we can look up the associated data value very quickly. In order
+to provide this fast look up capability, we need an implementation
+that supports an efficient search. We could use a list with 
+sequential or binary search, but it would be better to use a hash
+table since looking up an item in a hash table can approach O(1). 
+
+

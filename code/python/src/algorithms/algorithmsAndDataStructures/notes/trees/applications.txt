@@ -1,0 +1,105 @@
+					| Binary Tree Applications |
+					+--------------------------+
+
+Parse Tree
+----------
+
+We are going to look at:
+
+	- How to build a parse tree from a fully parenthesized mathematical expression
+	- How to evaluate the expression stored in a parse tree
+	- How to recover the original mathematical expression from a parse tree 
+
+----------
+
+The first step in building a parse tree is to break up the expression string into a list of
+tokens. There are four different kinds of tokens to consider: left parentheses, right parentheses,
+operators, and operands. We know that whenever we read a left parentheses we are starting a new
+expression. Conversely, whenever we read a right parenthesis, we have finished an expression. We
+also know that operands are going to be leaf nodes and children of their operators. Finally, we
+know that every operator is going to have both a left and right child. 
+
+Four Rules:
+
+	1. If the current token is a '(', add a new node as the left child of the current node, 
+	and descend to the left child. 
+
+	2. If the current token is in the list ['+','-', '/', '*'], set the root value of the current
+	node to the operator represented by the current token. Add a new node as the right child of
+	the current node and descend to the right child. 
+
+	3. If the current token is a number (operand), set the root value of the current node to the
+	number and return to the parent. 
+
+	4. If the current token is a ')', go to the parent of the current node. 
+
+Ex: (3 + (4 * 5))
+
+	We will parse this expression into a list of character tokens:
+	['(', '3', '+', '(', '*', '5', ')', ')']. 
+
+	Lets Walk through this step by step:
+
+		a. Create an empty tree. 
+
+		b. Read '(' as the first token. By rule 1, we create a new node as the left child of the 
+		root. Make the current node this new child. 
+
+		c. Read '3' as the next token. By rule 3, set the root value of the current node to 3 
+		and go back up the tree to the parent. 
+
+		d. Read '+' as the next token. By rule 2, set the root value of the current node to '+'
+		and add a new node as the right child. The new right child becomes the current node. 
+
+		e. Read '(' as the next token. By rule 1, we crate a new node as the left child of the
+		current node. The new left child becomes the current node. 
+
+		f. Read '4' as the next token. By rule 3, we set the value of the current node to 4. 
+		Make the parent of 4 the current node. 
+
+		g. Read '*' as the next token. By rule 2, we set the root value of the current node to '*'
+		and create a new right child. The new right child becomes the current node. 
+
+		h. Read '5' as the next token. By rule 3, we set the root value of the current node to 
+		'5'. Make the parent of '5' the current node. 
+
+		i. Read ')' as the next token. By rule 4, we make the parent of '*' the current node. 
+
+		j. Read ')' as the next token. By rule 4, we make the parent of '+' the current node. 
+		At this point there is not parent for '+' so we are done. 
+
+
+From the example above, it is clear that we need to keep track of the current node as well as the
+parent of the current node. The tree interface provides us with a way to get children of a node, 
+through the getLeftChild and getRightChild methods, but how can we keep track of the parent?
+A simple solution to keeping track of the parents as we traverse the tree is to use a stack. 
+Whenever we want to descend to a child of the current node, we pop the parent of the stack. 
+
+We will begin the design for the recursive evaluation function by identifying the base case. 
+A natural base case for recursive algorithms that operate on trees is to check for a leaf node. 
+In a parse tree, the leaf nodes will always be operands. Since numerical objects like integers
+and floating points require no further interpretation, the evaluate function can simply return
+the value stored in the leaf node. The recursive step that moves the function toward the base
+case is to call evaluate on both the left and the right children of the current node. The
+recursive call effectively moves us down the tree, towards a leaf node. 
+
+To put the results of the two recursive calls together, we can simply apply the operator 
+stored in the parent node to the results returned from evaluating both children. 
+
+-------------------------------------------------------------------------------------------------
+Tree Traversals 
+
+There are three commonly used patterns to visit all the nodes ina tree. 
+
+	1. preorder 
+		- In a preorder traversal, we visit the root node first, then recurisvely do a preorder
+		traversal of the left subtree, followed by a recursive preorder traversal of the 
+		right subtree. 
+
+	2. inorder
+		- In an inorder traversal, we recursively do an inorder traversal on the left subtree, 
+		visit the root node, and finally do a recursive inorder traversal of the right subtree. 
+
+	3. postorder 
+		- In a postorder traversal, we recursively do a postorder traversal of the left subtree 
+		and the right subtree, followed by a visit to the root node. 
