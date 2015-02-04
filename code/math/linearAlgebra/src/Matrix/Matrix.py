@@ -5,15 +5,14 @@ class Matrix:
         self.mat = mat
 
     def reduced_echelon_form(self):
-        for i in range(len(self.mat)):
-            if i < len(self.mat) - 1:
-                for j in range(len(self.mat[i])):
-                    if self._nonZero(self.mat[i+1][j]):
-                        m = self.mat[i][j]
-                        n = self.mat[i+1][j]
-                        print((m,n))
-                        scalars = self._findScalars(m, n)
-                        self._gaussian(i, i+1, scalars)
+        for i in range(len(self.mat) - 1):
+            for j in range(len(self.mat[i])):
+                if self._nonZero(self.mat[i+1][j]):
+                    m = self.mat[i][j]
+                    n = self.mat[i+1][j]
+                    print((m,n))
+                    scalars = self._findScalars(m, n)
+                    self._gaussian(i, i+1, scalars)
 
 
     def row_reduced_echelon_form(self):
