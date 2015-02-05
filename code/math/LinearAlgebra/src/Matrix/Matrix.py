@@ -13,11 +13,26 @@ class Matrix:
                     scalars = self._find_scalars(m, n)
                     self._gaussian(c, r, scalars)
 
-                           
-
 
     def row_reduced_echelon_form(self):
         pass
+
+    def consistent(self):
+        consistent = True
+        length = len(self.mat)
+
+        for r in range(length):
+            all_zero = True
+            for c in range(length - 1):
+                if self._non_zero(self.mat[r][c]):
+                    all_zero = False
+                    break
+
+            if all_zero and self.mat[r][length - 1] != 0:
+                consistent = False
+                break
+
+        return consistent
 
     def _gaussian(self, row1, row2, scalars):
         for i in range(len(self.mat[row1])):
@@ -63,4 +78,5 @@ mat = Matrix([[1, 0, 2],
 print(mat.mat)
 mat.reduced_echelon_form()
 print(mat.mat)
+print(mat.consistent())
 
