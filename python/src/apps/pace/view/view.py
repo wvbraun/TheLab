@@ -1,18 +1,6 @@
-#from npyscreen import NPSApp, Form, FormMutt, FormMultiPage, TitleText, TitleFilename
-
-import urwid
+from npyscreen import NPSApp, Form, FormMutt, FormMultiPage, TitleText, TitleFilename
 
 
-class MenuButton(urwid.Button):
-    
-    def __init__(self, caption, callback):
-        super(MenuButton, self).__init__("")
-        urwid.connect_signal(self, 'click', callback)
-        self._w = urwid.AttrMap(urwid.SelectableIcon(
-            [u' \N{BULLET} ', caption], 2), None, 'selected')
-
-
-'''
 class PaceView(NPSApp):
     def main(self):
         F = Form(name = "PACE")
@@ -28,7 +16,6 @@ class LiftPanel (NPSApp):
         #F.edit()
 
 
-'''
 
 if __name__ == "__main__":
     App = PaceView()
