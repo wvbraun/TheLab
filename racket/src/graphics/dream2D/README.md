@@ -36,9 +36,7 @@ line-class			  => moveable-interface
 ## How To Use
 
 ```
-UNIX: ./Dream2D
-
-ELSE: racket Dream2D.rkt
+racket Dream2D.rkt
 ```
 
 If you want to increase the speed, you need to edit the the
